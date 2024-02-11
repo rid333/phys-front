@@ -147,7 +147,7 @@
                 <img src={`${PUBLIC_API_URL}/media/mews3.jpg`} alt="img" class="h-52 w-full hover:scale-125 transition duration-500 cursor-pointer object-cover">
             </div>
             <div class="overflow-hidden col-span-2 cursor-pointer">
-                <img src={`${PUBLIC_API_URL}/media/tamanfisika-1024x682.jpg`}  alt="img" class="h-52 w-full hover:scale-125 transition duration-500 cursor-pointer object-cover">
+                <img src={`${PUBLIC_API_URL}/media/tamanfisika.jpg`}  alt="img" class="h-52 w-full hover:scale-125 transition duration-500 cursor-pointer object-cover">
             </div>
             <div class="overflow-hidden cursor-pointer">
                 <img src={`${PUBLIC_API_URL}/media/DeptFisika1.jpg`} alt="img" class="h-52 w-full hover:scale-125 transition duration-500 cursor-pointer object-cover">
