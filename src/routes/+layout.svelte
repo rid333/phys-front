@@ -6,7 +6,6 @@
 
 <body class="bg-slate-100">
   <nav>
-    <Navbar />
   </nav>
   
   <main>
