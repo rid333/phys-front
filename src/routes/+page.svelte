@@ -14,7 +14,7 @@
     <title>Home</title>
 </svelte:head>
 
-<!-- Image Carousel -->
+<!-- Image Carousel
 <div class="carousel">
     <swiper-container
         slides-per-view={1}
@@ -47,7 +47,7 @@
         {/each}
     </swiper-container>
 </div>
-
+-->
 
 <!-- Recent News  -->
 <div class="py-20 bg-slate-50 h-full w-full relative">
