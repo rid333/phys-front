@@ -9,7 +9,7 @@
     export let pageName: string;
     export let color: string;
     export let topImage: string;
-    const API_URL = import.meta.env.VITE_API_URL;
+    import { PUBLIC_API_URL } from "$env/static/public";
 </script>
 
 <svelte:head>
@@ -54,7 +54,7 @@
         <div class="grid lg:grid-cols-2 gap-10">
             {#each dosen as item}
                 <a href={`/people/${item.id}`} class="flex gap-8">
-                    <img class="w-28 h-28 lg:w-32 lg:h-32 aspect-square rounded-none" src={`${API_URL}${item.photo.url}`} alt={item.name}/>
+                    <img class="w-28 h-28 lg:w-32 lg:h-32 aspect-square rounded-none" src={`${PUBLIC_API_URL}${item.photo.url}`} alt={item.name}/>
                     <div class="flex flex-col">
                         <div class={`font-semibold text-lg text-white bg-${color} p-2 mb-2 w-fit`}>{item.name}</div>
                         <div class="text-base font-medium">{item.position}</div>
