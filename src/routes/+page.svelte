@@ -50,7 +50,7 @@
 </div>
 
 
-<!-- Recent News -->
+<!-- Recent News  -->
 <div class="py-20 bg-slate-50 h-full w-full relative">
     <div class="absolute font-extrabold text-[11rem] text-redUH-200 top-0 opacity-10">Recent News</div>
     <div class="flex flex-col items-center m-auto text-white max-w-7xl">
@@ -148,7 +148,7 @@
                 <img src={`${API_URL}/media/mews3.jpg`} alt="img" class="h-52 w-full hover:scale-125 transition duration-500 cursor-pointer object-cover">
             </div>
             <div class="overflow-hidden col-span-2 cursor-pointer">
-                <img src={`${API_URL}/media/tamanfisika.jpeg`}  alt="img" class="h-52 w-full hover:scale-125 transition duration-500 cursor-pointer object-cover">
+                <img src={`${API_URL}/media/tamanfisika-1024x682.jpg`}  alt="img" class="h-52 w-full hover:scale-125 transition duration-500 cursor-pointer object-cover">
             </div>
             <div class="overflow-hidden cursor-pointer">
                 <img src={`${API_URL}/media/DeptFisika1.jpg`} alt="img" class="h-52 w-full hover:scale-125 transition duration-500 cursor-pointer object-cover">
@@ -165,7 +165,7 @@
         <h1 class="text-3xl lg:text-4xl font-bold scroll-m-20 p-5 mb-20 bg-redUH-400 z-0">Research Areas</h1>
         <div class="flex items-center justify-center">
             <div class="w-2/5 hidden lg:block overflow-hidden z-0">
-                <img src={`${API_URL}/media/teoridepan.jpeg`} alt="" class="h-[800px] hover:scale-110 transition duration-500 cursor-pointer object-cover">
+                <img src={`${API_URL}/media/teoridepan-1024x682.jpg`} alt="" class="h-[800px] hover:scale-110 transition duration-500 cursor-pointer object-cover">
             </div>
             <div class="lg:w-3/5 flex flex-col justify-center bg-redUH-400 p-14 gap-y-5 lg:gap-y-7 lg:-ml-20 z-0">
                 <h1 class="text-3xl lg:text-5xl font-bold">Theoretical and Computation</h1>
@@ -185,7 +185,7 @@
         </div>
         <div class="flex justify-center items-center">
             <div class="w-2/5 hidden lg:block overflow-hidden z-0">
-                <img src={`${API_URL}/media/elins.jpeg`} alt="Lab Elins" class="h-[800px] hover:scale-110 transition duration-500 cursor-pointer object-cover object-left">
+                <img src={`${API_URL}/media/elins-1024x682.jpg`} alt="Lab Elins" class="h-[800px] hover:scale-110 transition duration-500 cursor-pointer object-cover object-left">
             </div>
             <div class="lg:w-3/5 flex flex-col justify-center bg-blueUH-500 p-14 gap-y-5 lg:gap-y-7 lg:-ml-20 z-0">
                 <h1 class="text-3xl lg:text-5xl font-bold">Electronics and Instrumentation</h1>

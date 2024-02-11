@@ -7,4 +7,4 @@
     const API_URL = import.meta.env.VITE_API_URL;
 </script>
 
-<ResearchGroup {content} {thesis} {dosen} topImage={`${API_URL}/media/elins.jpeg`}  pageName="Electronics and Instrumentation" color="blueUH-500"/>
+<ResearchGroup {content} {thesis} {dosen} topImage={`${API_URL}/media/elins-1024x682.jpg`}  pageName="Electronics and Instrumentation" color="blueUH-500"/>

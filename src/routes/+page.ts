@@ -23,11 +23,7 @@ type ActivityItem = {
     id: number;
     title: string;
     image: {
-        sizes: {
-            thumbnail: {
-                url: string;
-            }
-        }
+        url: string;
     };
     date: string;
     time: string;
@@ -65,7 +61,7 @@ export const load: PageLoad = async ( { fetch } ) => {
         judul: newsItem.title,
         excerpt: newsItem.excerpt,
         thumbnail: `${API_URL}${newsItem.image.url}`,
-        date: newsItem.createdAt
+        date: newsItem.createdAt,
     }))
 
     const activities: {
@@ -78,7 +74,7 @@ export const load: PageLoad = async ( { fetch } ) => {
     } [] = items[2].docs.map((activityItem: ActivityItem) => ({
         id: activityItem.id,
         judul: activityItem.title,
-        thumbnail: `${API_URL}${activityItem.image.sizes.thumbnail.url}`,
+        thumbnail: `${API_URL}${activityItem.image.url}`,
         date: activityItem.date,
         time: activityItem.time,
         location: activityItem.location
