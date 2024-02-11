@@ -3,6 +3,7 @@
     import type {PageData} from "./$types";
     export let data: PageData;
     $: ({ visiMisi } = data);
+    const API_URL = import.meta.env.VITE_API_URL;
 </script>
 
-<Profile imageSource="" pageName="Vision and Mission" pageDescription={visiMisi} />
+<Profile imageSource={`${API_URL}/media/visimisi.jpg`} pageName="Vision and Mission" pageDescription={visiMisi} />

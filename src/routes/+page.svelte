@@ -175,7 +175,7 @@
         </div>
         <div class="flex flex-row-reverse justify-center items-center">
             <div class="w-2/5 hidden lg:block overflow-hidden z-0">
-                <img src="https://images.unsplash.com/photo-1696737525743-8f81603b5ef0?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8cG9ydHJhaXQlMjBzY2VuZXJ5fGVufDB8fDB8fHww" alt="" class="hover:scale-110 transition duration-500 cursor-pointer object-cover">
+                <img src={`${API_URL}/media/material.jpg`} alt="" class="h-[800px] hover:scale-110 transition duration-500 cursor-pointer object-cover">
             </div>
             <div class="lg:w-3/5 flex flex-col justify-center bg-darkgreenUH-500 p-14 gap-y-5 lg:gap-y-7 lg:-mr-20 z-0">
                 <h1 class="text-3xl lg:text-5xl font-bold">Material and Energy</h1>
@@ -195,7 +195,7 @@
         </div>
         <div class="flex flex-row-reverse justify-center items-center">
             <div class="w-2/5 hidden lg:block overflow-hidden z-0">
-                <img src="https://images.unsplash.com/photo-1561394706-0f5b464eaa15?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mjd8fHBvcnRyYWl0JTIwc2NlbmVyeXxlbnwwfHwwfHx8MA%3D%3D" alt="" class="hover:scale-110 transition duration-500 cursor-pointer object-cover">
+                <img src={`${API_URL}/media/optik.jpg`} alt="" class="h-[800px] object-left hover:scale-110 transition duration-500 cursor-pointer object-cover">
             </div>
             <div class="lg:w-3/5 flex flex-col justify-center bg-yellowUH-900 p-14 gap-y-5 lg:gap-y-7 lg:-mr-20 z-0">
                 <h1 class="text-3xl lg:text-5xl font-bold">Optics and Spectroscopy</h1>
