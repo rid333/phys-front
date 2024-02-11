@@ -1,5 +1,5 @@
 <script lang="ts">  
-    const API_URL = import.meta.env.VITE_API_URL;
+    import { PUBLIC_API_URL } from "$env/static/public";
     import { onMount } from "svelte";
     export let richText: any[];
     interface Child {
@@ -55,7 +55,7 @@
             case "blockquote":
                 return `<blockquote>${node.children?.map((child: Child) => child.text)}</blockquote>`;
             case "upload":
-                return `<img src="${API_URL}${node.value?.sizes?.tablet?.url}" />`;
+                return `<img src="${PUBLIC_API_URL}${node.value?.sizes?.tablet?.url}" />`;
             case 'ul':
                 return `<ul>${node.children?.map((child: Child) => `<li>${child.children?.map((child: Child) => child.text).join('')}</li>`).join('')}</ul>`;
             case 'ol':
