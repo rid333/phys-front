@@ -7,7 +7,6 @@
     register();
     export let data: PageData;
     $: ({ images, news, activities, excerptElins, excerptMaterial, excerptOptik, excerptTeori  } = data);
-
     import {PUBLIC_API_URL} from  '$env/static/public';
 </script>
 
