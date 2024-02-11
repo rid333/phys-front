@@ -110,7 +110,7 @@
 </div>
 
 
-<!-- Graduate and Undergraduate Program
+<!-- Graduate and Undergraduate  -->
 <div class="py-5 lg:py-20 bg-blueUH-500 text-white h-full w-full relative">
     <div class="flex lg:justify-center items-center gap-x-14 mx-auto p-14 lg:p-0 max-w-7xl">
         <div class="flex flex-col gap-y-8 mx-auto justify-center lg:w-2/5 z-0">
@@ -156,7 +156,7 @@
 </div>
 
 
-<!-- Research Areas
+<!-- Research Areas -->
 <div class="pt-20 lg:py-20 bg-slate-100 h-full w-full relative">
     <div class="absolute font-extrabold text-[5rem] lg:text-[11rem] text-slate-300 top-0 opacity-70">Research Areas</div>
     <div class="flex flex-col lg:gap-y-10 items-center m-auto text-white max-w-7xl">
@@ -203,4 +203,3 @@
         </div>
     </div>
 </div>
--->
