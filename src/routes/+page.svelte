@@ -7,7 +7,8 @@
     register();
     export let data: PageData;
     $: ({ images, news, activities, excerptElins, excerptMaterial, excerptOptik, excerptTeori  } = data);
-    import { PUBLIC_BASE_URL as API_URL } from '$env/static/public';
+
+    const API_URL = import.meta.env.VITE_API_URL;
 </script>
 
 <svelte:head>

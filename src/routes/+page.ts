@@ -1,6 +1,6 @@
 import type { PageLoad } from "./$types";
 
-import { API_URL } from '$env/static/private';
+let API_URL = import.meta.env.VITE_API_URL;
 
 type imageType = {
     id: number;
