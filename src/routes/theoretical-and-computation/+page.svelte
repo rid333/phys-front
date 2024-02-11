@@ -3,6 +3,7 @@
     import type { PageData } from "./$types";
     export let data: PageData;
     $: ({ content, thesis, dosen } = data);
+    import { PUBLIC_API_URL } from "$env/static/public";
 
 </script>
 

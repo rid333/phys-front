@@ -1,17 +1,12 @@
 <script lang="ts">
-    import { onMount } from 'svelte';
-    import {ChevronRight} from 'lucide-svelte';
     import * as Accordion from "$lib/components/ui/accordion";
     import type { PageData } from './$types';
-  import Breadcrumb from '$lib/components/ui/Breadcrumb.svelte';
+    import Breadcrumb from '$lib/components/ui/Breadcrumb.svelte';
     export let data: PageData;
 
     $: ({semester1, semester2, semester3, semester4, semester5, semester6} = data);
 
     const pageName = "Module Handbook";
-    onMount(() => {
-        console.log(semester1);
-    });
 </script>
 
 <svelte:head>

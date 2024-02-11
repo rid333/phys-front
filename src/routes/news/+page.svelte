@@ -4,7 +4,7 @@
     import type { PageData } from "./$types";
     import Breadcrumb from "$lib/components/ui/Breadcrumb.svelte" ;
     export let data: PageData;
-    const API_URL = import.meta.env.VITE_API_URL;
+    import {PUBLIC_API_URL} from "$env/static/public";
     let pageSize = 10;
     $: currentPage = Number(data.page);
 </script>
@@ -31,7 +31,7 @@
     </div>
     {#each data.docs as news}
         <div class="flex items-start">
-            <img src={`${API_URL}${news.image.sizes.thumbnail.url}`} alt={news.title} class="shadow-lg w-36 lg:w-64 h-auto"/>
+            <img src={`${PUBLIC_API_URL}${news.image.sizes.thumbnail.url}`} alt={news.title} class="shadow-lg w-36 lg:w-64 h-auto"/>
             <div class="ml-5 lg:ml-10 flex flex-col gap-y-2">
                 <div class="flex flex-col">
                     <a href={`/news/${news.id}`} class="font-semibold lg:font-bold text-base lg:text-2xl">{news.title}</a>

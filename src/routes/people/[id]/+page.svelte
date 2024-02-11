@@ -4,7 +4,7 @@
     import type { PageData } from "./$types";
     export let data: PageData;
     $: ({PeopleItem} = data);
-    const API_URL = import.meta.env.VITE_API_URL;
+    import {PUBLIC_API_URL} from "$env/static/public";
 
 </script>
 
@@ -23,7 +23,7 @@
     <div class="relative flex flex-col gap-y-10 bg-white m-auto max-w-6xl lg:mb-20 p-10 lg:p-20 shadow-lg">
         <img class="absolute top-28 right-32 opacity-[0.03] w-[600px] h-auto grayscale" src={logo} alt="Logo">
         <div class="relative flex gap-x-8 lg:gap-x-16">
-            <img class="z-10 w-[150px] h-[150px] lg:w-[300px] lg:h-[350px] object-cover shadow-lg" src={`${API_URL}${PeopleItem.photo.url}`} alt="Gambar">
+            <img class="z-10 w-[150px] h-[150px] lg:w-[300px] lg:h-[350px] object-cover shadow-lg" src={`${PUBLIC_API_URL}${PeopleItem.photo.url}`} alt="Gambar">
             <div class="flex flex-col gap-y-2 z-10">
                 <p class="text-xl lg:text-4xl font-bold text-redUH-600">{PeopleItem.name}</p>
                 {#if PeopleItem.researchInterest !== null && PeopleItem.researchInterest !== "tidak-ada"}

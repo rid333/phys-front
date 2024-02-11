@@ -10,12 +10,12 @@ type Dosen = {
 
 import type { PageLoad } from "./$types";
 
-let API_URL = import.meta.env.VITE_API_URL;
+import { PUBLIC_API_URL } from "$env/static/public";
 
 export const load: PageLoad = async ( { fetch } ) => {
     const urls = [
-        `${API_URL}/api/globals/teori-dan-komputasi`,
-        `${API_URL}/api/people?limit=30&sort=id&[where][researchInterest][equals]=Theoretical and Computation`,
+        `${PUBLIC_API_URL}/api/globals/teori-dan-komputasi`,
+        `${PUBLIC_API_URL}/api/people?limit=30&sort=id&[where][researchInterest][equals]=Theoretical and Computation`,
     ];
     const responses = await Promise.all(urls.map(url => fetch(url)));
     const data = await Promise.all(responses.map(res => res.json()));

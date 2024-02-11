@@ -1,9 +1,9 @@
 import type { PageLoad } from "./$types";
 
-const API_URL = import.meta.env.VITE_API_URL;
+import { PUBLIC_API_URL } from "$env/static/public";
 
 export const load: PageLoad = async ( { fetch, params } ) => {
-    const res = await fetch(`${API_URL}/api/people/${params.id}`);
+    const res = await fetch(`${PUBLIC_API_URL}/api/people/${params.id}`);
     const item = await res.json();
 
     const PeopleItem: {

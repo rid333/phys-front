@@ -3,8 +3,8 @@
     import type {PageData} from "./$types";
     export let data: PageData;
     $: ({ history } = data);
-    const API_URL = import.meta.env.VITE_API_URL;
+    import {PUBLIC_API_URL} from "$env/static/public";
 </script>
 
-<Profile imageSource={`${API_URL}/media/DeptFisika4.jpg`} pageName="History" pageDescription={history} />
+<Profile imageSource={`${PUBLIC_API_URL}/media/DeptFisika4.jpg`} pageName="History" pageDescription={history} />
 ```

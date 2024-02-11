@@ -1,5 +1,4 @@
-let API_URL = import.meta.env.VITE_API_URL;
-
+import {PUBLIC_API_URL} from '$env/static/public';
 type Dosen = {
     id: number;
     name: string;
@@ -18,8 +17,8 @@ import type { PageLoad } from "./$types";
 
 export const load: PageLoad = async ( { fetch } ) => {
     const urls = [
-        `${API_URL}/api/globals/elektronika-dan-instrumentasi`,
-        `${API_URL}/api/people?limit=30&sort=id&[where][researchInterest][equals]=Electronics and Instrumentation`,
+        `${PUBLIC_API_URL}/api/globals/elektronika-dan-instrumentasi`,
+        `${PUBLIC_API_URL}/api/people?limit=30&sort=id&[where][researchInterest][equals]=Electronics and Instrumentation`,
     ];
     const responses = await Promise.all(urls.map(url => fetch(url)));
     const data = await Promise.all(responses.map(res => res.json()));

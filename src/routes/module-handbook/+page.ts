@@ -1,6 +1,5 @@
 import type { PageLoad } from "./$types";
-
-let API_URL = import.meta.env.VITE_API_URL;
+import {PUBLIC_API_URL} from '$env/static/public';
 
 type HanbookType = {
     semester1: {
@@ -30,7 +29,7 @@ type HanbookType = {
 };
 
 export const load: PageLoad = async ( { fetch } ) => {
-    const res = await fetch(`${API_URL}/api/globals/module-handbook`);
+    const res = await fetch(`${PUBLIC_API_URL}/api/globals/module-handbook`);
     const items = await res.json();
     return items as HanbookType;
 }

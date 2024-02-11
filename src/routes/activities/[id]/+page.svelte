@@ -3,12 +3,8 @@
     import { ChevronRight, Calendar, MapPin, BookOpen } from "lucide-svelte";
     import type { PageData } from "./$types";
     import Serializer from "$lib/components/Serializer.svelte";
-    import { onMount } from "svelte";
     export let data: PageData;
     $: ({ id, judul, thumbnail, date, time, location, description } = data )
-    onMount(() => {
-        console.log(judul, thumbnail, date, time, location, description)
-    });
 </script>
 
 <svelte:head>

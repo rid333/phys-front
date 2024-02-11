@@ -1,7 +1,5 @@
 import type { PageLoad } from "./$types";
-
-
-import {PUBLIC_BASE_URL as API_URL} from  '$env/static/private';
+import { PUBLIC_API_URL } from "$env/static/public";
 
 type imageType = {
     id: number;
@@ -32,13 +30,13 @@ type ActivityItem = {
 }
 
 const urls = [
-    `${API_URL}/api/carousel`,
-    `${API_URL}/api/news?limit=3`,
-    `${API_URL}/api/activities?limit=3`,
-    `${API_URL}/api/globals/elektronika-dan-instrumentasi`,
-    `${API_URL}/api/globals/material-dan-energi`,
-    `${API_URL}/api/globals/optik-dan-spektroskopi`,
-    `${API_URL}/api/globals/teori-dan-komputasi`,
+    `${PUBLIC_API_URL}/api/carousel`,
+    `${PUBLIC_API_URL}/api/news?limit=3`,
+    `${PUBLIC_API_URL}/api/activities?limit=3`,
+    `${PUBLIC_API_URL}/api/globals/elektronika-dan-instrumentasi`,
+    `${PUBLIC_API_URL}/api/globals/material-dan-energi`,
+    `${PUBLIC_API_URL}/api/globals/optik-dan-spektroskopi`,
+    `${PUBLIC_API_URL}/api/globals/teori-dan-komputasi`,
 ]
 
 export const load: PageLoad = async ( { fetch } ) => {
@@ -48,7 +46,7 @@ export const load: PageLoad = async ( { fetch } ) => {
     const images: string[] =  items[0].docs.map((
         image: imageType
     ) => {
-        return `${API_URL}${image.carouselImage.url}`
+        return `${PUBLIC_API_URL}${image.carouselImage.url}`
     });
 
     const news: {
@@ -61,7 +59,7 @@ export const load: PageLoad = async ( { fetch } ) => {
         id: newsItem.id,
         judul: newsItem.title,
         excerpt: newsItem.excerpt,
-        thumbnail: `${API_URL}${newsItem.image.url}`,
+        thumbnail: `${PUBLIC_API_URL}${newsItem.image.url}`,
         date: newsItem.createdAt,
     }))
 
@@ -75,7 +73,7 @@ export const load: PageLoad = async ( { fetch } ) => {
     } [] = items[2].docs.map((activityItem: ActivityItem) => ({
         id: activityItem.id,
         judul: activityItem.title,
-        thumbnail: `${API_URL}${activityItem.image.url}`,
+        thumbnail: `${PUBLIC_API_URL}${activityItem.image.url}`,
         date: activityItem.date,
         time: activityItem.time,
         location: activityItem.location

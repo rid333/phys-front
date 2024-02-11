@@ -25,7 +25,7 @@
             />
         </div>
         <div class="max-w-full text-black text-xl font-medium leading-relaxed text-justify prose">
-            <p>Hellow world</p>
+            <p>Curriculum Structure</p>
         </div>
     </div>
 </div>

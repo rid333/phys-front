@@ -8,7 +8,7 @@
     export let data: PageData;
     $: ({ images, news, activities, excerptElins, excerptMaterial, excerptOptik, excerptTeori  } = data);
 
-    import {PUBLIC_BASE_URL as API_URL} from  '$env/static/private';
+    import {PUBLIC_API_URL} from  '$env/static/public';
 </script>
 
 <svelte:head>
@@ -142,16 +142,16 @@
         </div>
         <div class="hidden lg:grid grid-cols-3 gap-4 w-3/5 z-0">
             <div class="overflow-hidden">
-                <img src={`${API_URL}/media/event_e6a7023d9a.jpg`} alt="img" class="h-52 w-full hover:scale-125 transition duration-500 cursor-pointer object-cover">
+                <img src={`${PUBLIC_API_URL}/media/event_e6a7023d9a.jpg`} alt="img" class="h-52 w-full hover:scale-125 transition duration-500 cursor-pointer object-cover">
             </div>
             <div class="overflow-hidden col-span-2">
-                <img src={`${API_URL}/media/mews3.jpg`} alt="img" class="h-52 w-full hover:scale-125 transition duration-500 cursor-pointer object-cover">
+                <img src={`${PUBLIC_API_URL}/media/mews3.jpg`} alt="img" class="h-52 w-full hover:scale-125 transition duration-500 cursor-pointer object-cover">
             </div>
             <div class="overflow-hidden col-span-2 cursor-pointer">
-                <img src={`${API_URL}/media/tamanfisika-1024x682.jpg`}  alt="img" class="h-52 w-full hover:scale-125 transition duration-500 cursor-pointer object-cover">
+                <img src={`${PUBLIC_API_URL}/media/tamanfisika-1024x682.jpg`}  alt="img" class="h-52 w-full hover:scale-125 transition duration-500 cursor-pointer object-cover">
             </div>
             <div class="overflow-hidden cursor-pointer">
-                <img src={`${API_URL}/media/DeptFisika1.jpg`} alt="img" class="h-52 w-full hover:scale-125 transition duration-500 cursor-pointer object-cover">
+                <img src={`${PUBLIC_API_URL}/media/DeptFisika1.jpg`} alt="img" class="h-52 w-full hover:scale-125 transition duration-500 cursor-pointer object-cover">
             </div>
         </div>
     </div>
@@ -165,7 +165,7 @@
         <h1 class="text-3xl lg:text-4xl font-bold scroll-m-20 p-5 mb-20 bg-redUH-400 z-0">Research Areas</h1>
         <div class="flex items-center justify-center">
             <div class="w-2/5 hidden lg:block overflow-hidden z-0">
-                <img src={`${API_URL}/media/teoridepan-1024x682.jpg`} alt="" class="h-[800px] hover:scale-110 transition duration-500 cursor-pointer object-cover">
+                <img src={`${PUBLIC_API_URL}/media/teoridepan-1024x682.jpg`} alt="" class="h-[800px] hover:scale-110 transition duration-500 cursor-pointer object-cover">
             </div>
             <div class="lg:w-3/5 flex flex-col justify-center bg-redUH-400 p-14 gap-y-5 lg:gap-y-7 lg:-ml-20 z-0">
                 <h1 class="text-3xl lg:text-5xl font-bold">Theoretical and Computation</h1>
@@ -175,7 +175,7 @@
         </div>
         <div class="flex flex-row-reverse justify-center items-center">
             <div class="w-2/5 hidden lg:block overflow-hidden z-0">
-                <img src={`${API_URL}/media/material.jpg`} alt="" class="h-[800px] hover:scale-110 transition duration-500 cursor-pointer object-cover">
+                <img src={`${PUBLIC_API_URL}/media/material.jpg`} alt="" class="h-[800px] hover:scale-110 transition duration-500 cursor-pointer object-cover">
             </div>
             <div class="lg:w-3/5 flex flex-col justify-center bg-darkgreenUH-500 p-14 gap-y-5 lg:gap-y-7 lg:-mr-20 z-0">
                 <h1 class="text-3xl lg:text-5xl font-bold">Material and Energy</h1>
@@ -185,7 +185,7 @@
         </div>
         <div class="flex justify-center items-center">
             <div class="w-2/5 hidden lg:block overflow-hidden z-0">
-                <img src={`${API_URL}/media/elins-1024x682.jpg`} alt="Lab Elins" class="h-[800px] hover:scale-110 transition duration-500 cursor-pointer object-cover object-left">
+                <img src={`${PUBLIC_API_URL}/media/elins-1024x682.jpg`} alt="Lab Elins" class="h-[800px] hover:scale-110 transition duration-500 cursor-pointer object-cover object-left">
             </div>
             <div class="lg:w-3/5 flex flex-col justify-center bg-blueUH-500 p-14 gap-y-5 lg:gap-y-7 lg:-ml-20 z-0">
                 <h1 class="text-3xl lg:text-5xl font-bold">Electronics and Instrumentation</h1>
@@ -195,7 +195,7 @@
         </div>
         <div class="flex flex-row-reverse justify-center items-center">
             <div class="w-2/5 hidden lg:block overflow-hidden z-0">
-                <img src={`${API_URL}/media/optik.jpg`} alt="" class="h-[800px] object-left hover:scale-110 transition duration-500 cursor-pointer object-cover">
+                <img src={`${PUBLIC_API_URL}/media/optik.jpg`} alt="" class="h-[800px] object-left hover:scale-110 transition duration-500 cursor-pointer object-cover">
             </div>
             <div class="lg:w-3/5 flex flex-col justify-center bg-yellowUH-900 p-14 gap-y-5 lg:gap-y-7 lg:-mr-20 z-0">
                 <h1 class="text-3xl lg:text-5xl font-bold">Optics and Spectroscopy</h1>

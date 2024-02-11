@@ -4,7 +4,7 @@
     import type { PageData } from "./$types";
     export let data: PageData;
     const pageName = "Events";
-    let API_URL = import.meta.env.VITE_API_URL;
+    import {PUBLIC_API_URL} from "$env/static/public";
 
     let pageSize = 2;
     $: currentPage = Number(data.page);
@@ -32,7 +32,7 @@
     </div>
     {#each data.docs as event}
         <div class="flex items-center text-darkgreenUH-500">
-            <img src={`${API_URL}${event.image.sizes.thumbnail.url}`} alt={event.title} class="shadow-lg w-36 lg:w-64 h-fit">
+            <img src={`${PUBLIC_API_URL}${event.image.sizes.thumbnail.url}`} alt={event.title} class="shadow-lg w-36 lg:w-64 h-fit">
             <div class="flex flex-col p-10 gap-1 lg:gap-3">
                 <a href={`/activities/${event.id}`} class="font-bold text-lg lg:text-2xl">{event.title}</a>
                 <div class="inline-flex items-center gap-x-1 lg:gap-x-2">
