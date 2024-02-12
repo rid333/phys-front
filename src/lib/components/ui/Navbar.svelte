@@ -85,9 +85,9 @@
                         </div>
                     </Collapsible.Root>
                 {/each}
-                <a class="font-semibold text-xl hover:bg-slate-50 hover:underline transition px-3 py-2" href="/people">People</a>
-                <a class="font-semibold text-xl hover:bg-slate-50 hover:underline transition px-3 py-2" href="/news">News</a>
-                <a class="font-semibold text-xl hover:bg-slate-50 hover:underline transition px-3 py-2" href="/activities">Events</a>
+                <a class="font-semibold text-base lg:text-xl hover:bg-slate-50 hover:underline transition px-3 py-2" href="/people">People</a>
+                <a class="font-semibold text-base lg:text-xl hover:bg-slate-50 hover:underline transition px-3 py-2" href="/news">News</a>
+                <a class="font-semibold text-base lg:text-xl hover:bg-slate-50 hover:underline transition px-3 py-2" href="/activities">Events</a>
             </div>
         </Sheet.Content>
     </Sheet.Root>
