@@ -33,7 +33,7 @@
         class="relative"
     >
         <div class='absolute top-0 left-0 w-full h-full bg-black opacity-70 z-10'></div>
-        <div class="flex flex-col gap-y-5 lg:gap-y-6 absolute top-1/3 left-24 text-white z-10 w-4/6 lg:w-3/5">
+        <div class="flex flex-col gap-y-5 lg:gap-y-6 absolute top-1/4 lg:top-1/3 left-24 text-white z-10 w-4/6 lg:w-3/5">
             <p class="text-3xl lg:text-6xl font-bold">Welcome to Hasanuddin University Department of Physics</p>
             <p class="text-lg lg:text-2xl font-medium text-slate100"><i>"Embark on a journey to unveil the true nature of reality, from the grandest cosmic scales to the tiniest subatomic particles"</i></p>
             <Button class='text-sm lg:text-base w-fit bg-opacity-75 font-medium bg-redUH-500 text-white hover:bg-redUH-600 active:bg-redUH-700 rounded-none'>
