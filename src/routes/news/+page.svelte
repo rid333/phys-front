@@ -18,7 +18,7 @@
     <div class="w-full h-[500px] object-cover bg-red-700"></div>
 </div>
 
-<div class="relative mb-20 -mt-20 z-10 flex flex-col gap-y-14 max-w-5xl m-auto bg-slate-50 p-10 lg:p-20 shadow-xl">
+<div class="relative lg:mb-20 -mt-20 z-10 flex flex-col gap-y-14 max-w-5xl m-auto bg-slate-50 p-8 lg:p-20 shadow-xl">
     <div>
         <Breadcrumb
             firstMenu="News"

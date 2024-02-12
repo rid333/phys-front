@@ -19,7 +19,7 @@
 </div>
 
 <div class="relative max-w-5xl m-auto">
-    <div class="bg-white -mt-20 z-30 lg:mb-20 shadow-lg p-16">
+    <div class="bg-white -mt-20 z-30 lg:mb-20 shadow-lg p-8 lg:p-16">
         <div class="mb-12 text-sm lg:text-base">
             <Breadcrumb
                 firstMenu="Profile"

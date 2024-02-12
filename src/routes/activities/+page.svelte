@@ -19,7 +19,7 @@
     <div class="w-full h-[500px] object-cover bg-darkgreenUH-500"></div>
 </div>
 
-<div class="relative mb-20 -mt-20 z-10 flex flex-col gap-y-7 lg:gap-y-14 max-w-5xl m-auto bg-slate-50 p-10 lg:p-20 shadow-xl">
+<div class="relative lg:mb-20 -mt-20 z-10 flex flex-col gap-y-7 lg:gap-y-14 max-w-5xl m-auto bg-slate-50 p-8 lg:p-16 shadow-xl">
     <div>
         <Breadcrumb 
             firstMenu={pageName}
@@ -31,15 +31,15 @@
         />
     </div>
     {#each data.docs as event}
-        <div class="flex items-center text-darkgreenUH-500">
+        <div class="flex gap-5 text-darkgreenUH-500">
             <img src={`${PUBLIC_API_URL}${event.image.sizes.thumbnail.url}`} alt={event.title} class="shadow-lg w-36 lg:w-64 h-fit">
-            <div class="flex flex-col p-10 gap-1 lg:gap-3">
+            <div class="flex flex-col lg:p-10 gap-1 lg:gap-3">
                 <a href={`/activities/${event.id}`} class="font-bold text-lg lg:text-2xl">{event.title}</a>
-                <div class="inline-flex items-center gap-x-1 lg:gap-x-2">
+                <div class="flex items-center gap-x-1 lg:gap-x-2">
                     <Calendar size=18px strokeWidth=1.3px />
                     <span class="italic text-sm lg:text-xl">This will be held on {event.createdAt.slice(0,10).replaceAll("-", "/")} at {data.time}</span>
                 </div>
-                <div class="inline-flex items-center gap-x-1 lg:gap-x-2">
+                <div class="flex items-center gap-x-1 lg:gap-x-2">
                     <MapPin size=18px strokeWidth=1.3px />
                     <span class="italic text-sm lg:text-lg">Location: {data.Location}</span>
                 </div>

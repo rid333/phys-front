@@ -12,7 +12,7 @@
 </svelte:head>
 
 <div class="flex gap-x-5 lg:p-10 lg:pt-28 lg:mb-10">
-    <div class="lg:w-3/4 m-auto shadow-xl text-xl pb-20 pt-28 lg:pt-20 bg-white max-w-7xl px-10 lg:px-20">
+    <div class="lg:w-3/4 m-auto shadow-xl text-xl pb-20 pt-28 lg:pt-20 bg-white max-w-7xl px-8 lg:px-16">
         <div class="text-xs lg:text-base mb-5">
             <Breadcrumb
                 firstMenu="News"
