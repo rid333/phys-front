@@ -1,8 +1,9 @@
 <script lang="ts">
     import * as Sheet from "$lib/components/ui/sheet";
     import { Menu, ChevronDown } from "lucide-svelte";
+    import * as DropdownMenu from "$lib/components/ui/dropdown-menu";
     import { Button } from "$lib/components/ui/button";
-    import * as Collapsible from "./collapsible";
+    import * as Accordion from "$lib/components/ui/accordion";
     import logo from "$lib/images/logo.png"
 
     import {onMount, onDestroy} from 'svelte'
@@ -30,7 +31,11 @@
             menu: 'Profile', 
             items: [
                 {id: '1', item: 'History', href: '/history'},
-                {id: '2', item: 'Vision and Mission', href: '/vision-and-mission'},
+                {id: '2', item: 'Vision and Mission', children:'true', items: [
+                    {id: '1', item: 'Undergraduate Program', href: '/vision-and-mission'},
+                    {id: '1', item: 'Master Program', href: '/vision-and-mission-master'},
+                    {id: '1', item: 'Doctoral Program', href: '/vision-and-mission-doctor'},
+                ]},
                 {id: '3', item: 'Curriculum Structure', href: '/curriculum-structure'}
             ]
         },
@@ -39,7 +44,8 @@
             menu: 'Study Programs', 
             items: [
                 {id: '1', item: 'Undergraduate Program', href: '/undergraduate-program'},
-                {id: '2', item: 'Graduate Program', href: 'https://doctorphys.sci.unhas.ac.id/'}
+                {id: '2', item: 'Master Program', href: '/master-program'},
+                {id: '3', item: 'Doctoral Program', href: '/doctoral-program'}
             ]
         },
         {
@@ -57,7 +63,7 @@
             menu: 'Learning Resources', 
             items: [
                 {id: '1', item: 'Module Handbook', href: '/module-handbook'},
-                // {id: '2', item: 'Libraries', href: '/libraries'},
+                {id: '2', item: 'Libraries', href: '/library'},
                 // {id: '3', item: 'Portfolio', href: '/portfolio'}
             ]
         }
@@ -65,29 +71,48 @@
 </script>
 
 <div class={`${show ? 'opacity-75 blur-[0.5px]' : ''} text-slate-800 transition duration-400 flex items-center px-5 py-4 lg:py-5 w-screen rounded-none fixed z-50 shadow-md bg-white`}>
-    <Sheet.Root>
+    <Sheet.Root preventScroll={true}>
         <Sheet.Trigger asChild let:builder>
             <Button builders={[builder]} variant='ghost' class="rounded-none">
                 <Menu class="scale-90 lg:scale-100" />
             </Button>
         </Sheet.Trigger>
-        <Sheet.Content side="left">
-            <div class="grid gap-8 py-8 text-base lg:text-xl text-slate-800">
-                {#each menus as menu (menu.id)}
-                    <Collapsible.Root class="hover:bg-slate-50 transition px-3 py-2">
-                        <Collapsible.Trigger class="font-semibold flex items-center">{menu.menu} <ChevronDown class='ml-2 h-4 w-4 left-3' /></Collapsible.Trigger>
-                        <div class="mt-2 space-y-3 font-medium">
-                        {#each menu.items as item}
-                            <Collapsible.Content>
-                                <a class="hover:underline" href={item.href}>{item.item}</a>
-                            </Collapsible.Content>
-                        {/each}
-                        </div>
-                    </Collapsible.Root>
-                {/each}
-                <a class="font-semibold text-base lg:text-xl hover:bg-slate-50 hover:underline transition px-3 py-2" href="/people">People</a>
-                <a class="font-semibold text-base lg:text-xl hover:bg-slate-50 hover:underline transition px-3 py-2" href="/news">News</a>
-                <a class="font-semibold text-base lg:text-xl hover:bg-slate-50 hover:underline transition px-3 py-2" href="/activities">Events</a>
+        <Sheet.Content class="overflow-auto" side="left">
+            <div class="grid py-10 px-5 text-base text-slate-800">
+                <Accordion.Root>
+                    {#each menus as menu, i}
+                        <Accordion.Item value={`item-${i}`} class="hover:bg-slate-50 transition">
+                            <Accordion.Trigger class="font-semibold hover:no-underline">{menu.menu}</Accordion.Trigger>
+                            <div class=" font-medium">
+                                {#each menu.items as item}
+                                    <Accordion.Content>
+                                        {#if item.children}
+                                        <DropdownMenu.Root>
+                                            <DropdownMenu.Trigger class="flex items-center text-base">{item.item} <ChevronDown class='ml-2 h-4 w-4 left-3' /></DropdownMenu.Trigger>
+                                                <DropdownMenu.Content class="rounded-none px-3 py-2 ml-10">
+                                                    <DropdownMenu.Group>
+                                                        {#each item.items as itemChild}
+                                                            <DropdownMenu.Item>
+                                                                <a class="hover:underline" href={itemChild.href}>{itemChild.item}</a>
+                                                            </DropdownMenu.Item>
+                                                        {/each}
+                                                    </DropdownMenu.Group>
+                                                </DropdownMenu.Content>
+                                        </DropdownMenu.Root>
+                                        {:else}
+                                        <a class="hover:underline text-base font-medium" href={item.href}>{item.item}</a>
+                                        {/if}
+                                    </Accordion.Content>
+                                {/each}
+                            </div>
+                        </Accordion.Item>
+                    {/each}
+                </Accordion.Root>
+                <a class="font-semibold text-base hover:bg-slate-50 hover:underline transition py-4" href="/people">People</a>
+                <a class="font-semibold text-base hover:bg-slate-50 hover:underline transition py-4" href="/news">News</a>
+                <a class="font-semibold text-base hover:bg-slate-50 hover:underline transition py-4" href="/activities">Events</a>
+                <a class="font-semibold text-base hover:bg-slate-50 hover:underline transition py-4" href="/academic-sop">Academic SOP</a>
+                <a class="font-semibold text-base hover:bg-slate-50 hover:underline transition py-4" href="/appendix">Appendix</a>
             </div>
         </Sheet.Content>
     </Sheet.Root>

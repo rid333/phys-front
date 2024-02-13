@@ -24,6 +24,7 @@ export const load: PageLoad = async ( { fetch, params } ) => {
         phone: string;
         address: string;
         cvLink: string;
+        scopusLink: string;
         staffHandbookLink: string;
         publication: {
             id: string;

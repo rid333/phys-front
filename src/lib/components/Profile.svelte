@@ -2,6 +2,7 @@
     export let pageName: string;
     export let pageDescription: any[];
     export let imageSource: string;
+    export let imageClass: string = "object-cover"
     import Serializer from "./Serializer.svelte";
   import Breadcrumb from "./ui/Breadcrumb.svelte";
 </script>
@@ -15,7 +16,7 @@
     {#if imageSource==""}
         <div class="w-full h-[500px] object-cover bg-red-700"></div>
     {:else}
-        <img class="w-full h-[500px] object-cover brightness-50" src={imageSource} alt={pageName}>
+        <img class={`w-full h-[500px] ${imageClass} brightness-50`} src={imageSource} alt={pageName}>
     {/if}
 </div>
 

@@ -34,19 +34,19 @@
         {/if}
     </div>
     <div class="w-3/4 bg-white shadow-lg">
-        <div class="grid lg:grid-cols-2 p-5 lg:p-10 gap-12 lg:gap-20">
+        <div class="grid lg:grid-cols-2 p-5 lg:p-10 gap-12 lg:gap-16">
             {#each PeopleItems as {name, position, photo, researchAreas, email, id}}
-                <a href={`/people/${id}`} class="flex gap-x-2 lg:gap-8">
-                    <img class="aspect-square w-20 h-24 lg:w-32 lg:h-32 rounded-none" src={photo} alt={name}/>
+                <a href={`/people/${id}`} class="flex gap-x-5">
+                    <img class="aspect-square w-16 h-24 lg:w-28 lg:h-32 rounded-none" src={photo} alt={name}/>
                     <div class="flex flex-col">
-                        <div class="font-semibold text-sm lg:text-lg text-white bg-redUH-600 p-2 mb-2 w-fit">{name}</div>
+                        <div class="font-semibold text-xs lg:text-base text-white bg-redUH-600 p-2 mb-2 w-fit">{name}</div>
                         {#if researchAreas !== null && researchAreas !== "tidak-ada"}
-                            <div class="text-sm lg:text-lg font-semibold">{researchAreas}</div>
+                            <div class="text-xs lg:text-base font-semibold">{researchAreas}</div>
                         {/if}
                         {#if researchAreas !== "tidak-ada"}
-                            <div class="text-sm lg:text-base font-medium truncate">{position}</div>
+                            <div class="text-xs lg:text-base font-medium truncate">{position}</div>
                         {:else}
-                            <div class="text-sm lg:text-lg font-semibold truncate">{position}</div>
+                            <div class="text-xs lg:text-base font-semibold truncate">{position}</div>
                         {/if}
                         <div class="text-xs lg:text-base font-medium flex items-center gap-x-0.5"><Send size=16px strokeWidth=1px/>{email}</div>
                     </div>

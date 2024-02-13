@@ -16,6 +16,7 @@
         <div class="text-xs lg:text-base mb-5">
             <Breadcrumb
                 firstMenu="News"
+                firstMenuLink="/news"
                 colorFirstMenu="redUH-600"
                 secondMenu=""
                 colorSecondMenu=""

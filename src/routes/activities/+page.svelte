@@ -15,7 +15,7 @@
 </svelte:head>
 
 <div class="relative flex items-center justify-center">
-    <h1 class="text-7xl absolute text-white font-bold">{pageName}</h1>
+    <h1 class="text-5xl lg:text-7xl absolute text-white font-bold">{pageName}</h1>
     <div class="w-full h-[500px] object-cover bg-darkgreenUH-500"></div>
 </div>
 
@@ -37,11 +37,11 @@
                 <a href={`/activities/${event.id}`} class="font-bold text-lg lg:text-2xl">{event.title}</a>
                 <div class="flex items-center gap-x-1 lg:gap-x-2">
                     <Calendar size=18px strokeWidth=1.3px />
-                    <span class="italic text-sm lg:text-xl">This will be held on {event.createdAt.slice(0,10).replaceAll("-", "/")} at {data.time}</span>
+                    <span class="italic text-sm lg:text-xl">This will be held on {event.createdAt.slice(0,10).replaceAll("-", "/")} at {event.time}</span>
                 </div>
                 <div class="flex items-center gap-x-1 lg:gap-x-2">
                     <MapPin size=18px strokeWidth=1.3px />
-                    <span class="italic text-sm lg:text-lg">Location: {data.Location}</span>
+                    <span class="italic text-sm lg:text-lg">Location: {event.location}</span>
                 </div>
             </div>
         </div>

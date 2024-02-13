@@ -3,6 +3,7 @@
     import { Button } from '$lib/components/ui/button';
     import { Separator } from "$lib/components/ui/separator";
     import { Play, ArrowRight, ExternalLink, Clock } from 'lucide-svelte';
+    import * as Dialog from "$lib/components/ui/dialog";
     import type { PageData } from './$types';
     register();
     export let data: PageData;
@@ -32,13 +33,23 @@
         effect='fade'
         class="relative"
     >
-        <div class='absolute top-0 left-0 w-full h-full bg-black opacity-70 z-10'></div>
+        <div class='absolute top-0 left-0 w-full h-screen bg-black opacity-70 z-10'></div>
         <div class="flex flex-col gap-y-5 lg:gap-y-6 absolute top-1/4 lg:top-1/3 left-24 text-white z-10 w-4/6 lg:w-3/5">
             <p class="text-3xl lg:text-6xl font-bold">Welcome to Hasanuddin University Department of Physics</p>
             <p class="text-lg lg:text-2xl font-medium text-slate100"><i>"Embark on a journey to unveil the true nature of reality, from the grandest cosmic scales to the tiniest subatomic particles"</i></p>
+            <Dialog.Root>
+                <Dialog.Trigger class="flex items-center px-4 py-2 text-sm lg:text-base w-fit bg-opacity-75 font-medium bg-redUH-500 text-white hover:bg-redUH-600 active:bg-redUH-700 rounded-none">
+                    <Play class='h-5 w-5 mr-2 font-light' strokeWidth=2 />Watch our Introduction Video
+                </Dialog.Trigger>
+                <Dialog.Content>
+                    <iframe title="Introduction Video" class="w-full p-5 aspect-video" src="https://www.youtube.com/embed/zpzZUnNsmvY?si=rt6ClavDuWvOBMJR" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                </Dialog.Content>
+            </Dialog.Root>
+            <!--
             <Button class='text-sm lg:text-base w-fit bg-opacity-75 font-medium bg-redUH-500 text-white hover:bg-redUH-600 active:bg-redUH-700 rounded-none'>
                 <Play class='h-5 w-5 mr-2 font-light' strokeWidth=2 />Watch our Introduction Video
             </Button>
+            -->
         </div>
         {#each images as image}
             <swiper-slide>
@@ -50,7 +61,7 @@
 
 <!-- Recent News  -->
 <div class="py-20 bg-slate-50 h-full w-full relative">
-    <div class="absolute font-extrabold text-[11rem] text-redUH-200 top-0 opacity-10">Recent News</div>
+    <div class="absolute font-extrabold text-[5rem] lg:text-[11rem] text-redUH-200 top-0 opacity-10">Recent News</div>
     <div class="flex flex-col items-center m-auto text-white max-w-7xl">
         <p class="self-start text-4xl lg:text-5xl font-bold scroll-m-20 p-3 mb-10 text-redUH-500 z-0">Recent News</p>
         <div class="flex flex-col gap-y-10 lg:grid lg:grid-cols-3 lg:gap-x-20 z-0 mb-10">
@@ -87,7 +98,7 @@
 
 <!-- Events -->
 <div class="py-20 bg-slate-100 h-full w-full relative"> 
-    <div class="absolute font-extrabold text-[10rem] text-darkgreenUH-100 top-0 opacity-10">Upcoming Events</div>
+    <div class="absolute font-extrabold text-[5rem] lg:text-[10rem] text-darkgreenUH-100 top-0 opacity-10">Upcoming Events</div>
     <div class="flex flex-col items-center m-auto max-w-7xl">
         <p class="self-start text-4xl lg:text-5xl font-bold scroll-m-20 p-3 mb-10 text-darkgreenUH-500 z-0">Upcoming Events</p>
         <div class="flex flex-col gap-y-10 lg:grid lg:grid-cols-3 lg:gap-x-20 z-0 text-white mb-10">
@@ -160,7 +171,7 @@
 <div class="pt-20 lg:py-20 bg-slate-100 h-full w-full relative">
     <div class="absolute font-extrabold text-[5rem] lg:text-[11rem] text-slate-300 top-0 opacity-70">Research Areas</div>
     <div class="flex flex-col lg:gap-y-10 items-center m-auto text-white max-w-7xl">
-        <h1 class="text-3xl lg:text-4xl font-bold scroll-m-20 p-5 mb-20 bg-redUH-400 z-0">Research Areas</h1>
+        <h1 class="text-3xl lg:text-4xl font-bold scroll-m-20 p-3 lg:p-5 mb-10 lg:mb-20 bg-redUH-400 z-0">Research Areas</h1>
         <div class="flex items-center justify-center">
             <div class="w-2/5 hidden lg:block overflow-hidden z-0">
                 <img src={`${PUBLIC_API_URL}/media/teoridepan-1024x682.jpg`} alt="" class="h-[800px] hover:scale-110 transition duration-500 cursor-pointer object-cover">
@@ -193,7 +204,7 @@
         </div>
         <div class="flex flex-row-reverse justify-center items-center">
             <div class="w-2/5 hidden lg:block overflow-hidden z-0">
-                <img src={`${PUBLIC_API_URL}/media/optik.jpg`} alt="" class="h-[800px] object-left hover:scale-110 transition duration-500 cursor-pointer object-cover">
+                <img src={`${PUBLIC_API_URL}/media/optik1.jpg`} alt="" class="h-[800px] hover:scale-110 transition duration-500 cursor-pointer object-cover">
             </div>
             <div class="lg:w-3/5 flex flex-col justify-center bg-yellowUH-900 p-14 gap-y-5 lg:gap-y-7 lg:-mr-20 z-0">
                 <h1 class="text-3xl lg:text-5xl font-bold">Optics and Spectroscopy</h1>

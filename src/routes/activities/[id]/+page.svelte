@@ -1,5 +1,5 @@
 <script lang="ts">
-    import { Separator } from "$lib/components/ui/separator";
+    import Breadcrumb from "$lib/components/ui/Breadcrumb.svelte";
     import { ChevronRight, Calendar, MapPin, BookOpen } from "lucide-svelte";
     import type { PageData } from "./$types";
     import Serializer from "$lib/components/Serializer.svelte";
@@ -14,11 +14,15 @@
 <div class="flex gap-x-5 lg:pt-28 lg:p-10 lg:mb-10">
     <div class="lg:w-3/4 m-auto shadow-xl text-xl pb-20 pt-28 lg:pt-20 bg-white max-w-7xl px-10 lg:px-20">
         <div class="text-xs lg:text-base mb-5">
-            <div class="font-semibold gap-x-5 max-w-6xl flex m-auto items-center">
-                <a href="/">Home</a>
-                <ChevronRight class="w-5 h-5"/>
-                <a class="text-darkgreenUH-500" href="/activities">Activities</a>
-            </div>
+            <Breadcrumb
+                firstMenu="Activities"
+                firstMenuLink="/activities"
+                colorFirstMenu="darkgreenUH-500"
+                secondMenu=""
+                colorSecondMenu=""
+                thirdMenu=""
+                colorThirdMenu=""
+            />
         </div>
         <div class="flex flex-col gap-10">
             <p class="text-2xl lg:text-4xl font-bold">{judul}</p>

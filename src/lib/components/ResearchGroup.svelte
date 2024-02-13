@@ -53,8 +53,8 @@
         <h1 class={`text-${color} text-3xl font-bold mb-10`}>Academic Staff</h1>
         <div class="grid lg:grid-cols-2 gap-10">
             {#each dosen as item}
-                <a href={`/people/${item.id}`} class="flex gap-8">
-                    <img class="w-28 h-28 lg:w-32 lg:h-32 aspect-square rounded-none" src={`${PUBLIC_API_URL}${item.photo.url}`} alt={item.name}/>
+                <a href={`/people/${item.id}`} class="flex gap-5">
+                    <img class="w-28 h-28 lg:w-28 lg:h-32 aspect-square rounded-none" src={`${PUBLIC_API_URL}${item.photo.url}`} alt={item.name}/>
                     <div class="flex flex-col">
                         <div class={`font-semibold text-lg text-white bg-${color} p-2 mb-2 w-fit`}>{item.name}</div>
                         <div class="text-base font-medium">{item.position}</div>
