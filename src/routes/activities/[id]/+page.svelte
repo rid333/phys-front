@@ -1,6 +1,6 @@
 <script lang="ts">
     import Breadcrumb from "$lib/components/ui/Breadcrumb.svelte";
-    import { ChevronRight, Calendar, MapPin, BookOpen } from "lucide-svelte";
+    import { Calendar, MapPin, BookOpen } from "lucide-svelte";
     import type { PageData } from "./$types";
     import Serializer from "$lib/components/Serializer.svelte";
     export let data: PageData;
@@ -15,7 +15,7 @@
     <div class="lg:w-3/4 m-auto shadow-xl text-xl pb-20 pt-28 lg:pt-20 bg-white max-w-7xl px-10 lg:px-20">
         <div class="text-xs lg:text-base mb-5">
             <Breadcrumb
-                firstMenu="Activities"
+                firstMenu="Events"
                 firstMenuLink="/activities"
                 colorFirstMenu="darkgreenUH-500"
                 secondMenu=""

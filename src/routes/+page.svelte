@@ -41,15 +41,10 @@
                 <Dialog.Trigger class="flex items-center px-4 py-2 text-sm lg:text-base w-fit bg-opacity-75 font-medium bg-redUH-500 text-white hover:bg-redUH-600 active:bg-redUH-700 rounded-none">
                     <Play class='h-5 w-5 mr-2 font-light' strokeWidth=2 />Watch our Introduction Video
                 </Dialog.Trigger>
-                <Dialog.Content>
-                    <iframe title="Introduction Video" class="w-full p-5 aspect-video" src="https://www.youtube.com/embed/zpzZUnNsmvY?si=rt6ClavDuWvOBMJR" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                <Dialog.Content class="h-auto lg:min-w-[1024px]">
+                    <iframe title="Introduction Video" class="w-full h-full p-2 aspect-video" src="https://www.youtube.com/embed/fQRzZfliaMo?si=uhF-XieAi2kbtQtY" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
                 </Dialog.Content>
             </Dialog.Root>
-            <!--
-            <Button class='text-sm lg:text-base w-fit bg-opacity-75 font-medium bg-redUH-500 text-white hover:bg-redUH-600 active:bg-redUH-700 rounded-none'>
-                <Play class='h-5 w-5 mr-2 font-light' strokeWidth=2 />Watch our Introduction Video
-            </Button>
-            -->
         </div>
         {#each images as image}
             <swiper-slide>

@@ -32,10 +32,10 @@
     <div class="bg-white -mt-20 z-30 lg:mb-20 shadow-lg p-8 lg:p-16">
         <div class="mb-12 text-sm lg:text-base">
             <Breadcrumb
-                firstMenu="Profile"
-                colorFirstMenu="black"
-                secondMenu={pageName}
-                colorSecondMenu="redUH-600"
+                firstMenu={pageName}
+                colorFirstMenu="redUH-600"
+                secondMenu=""
+                colorSecondMenu=""
                 thirdMenu=""
                 colorThirdMenu=""
             />

@@ -3,8 +3,10 @@
     export let pageDescription: any[];
     export let imageSource: string;
     export let imageClass: string = "object-cover"
+    export let headMenu: string = "Profile";
+    export let colorHeadMenu: string = "redUH-600";
     import Serializer from "./Serializer.svelte";
-  import Breadcrumb from "./ui/Breadcrumb.svelte";
+    import Breadcrumb from "./ui/Breadcrumb.svelte";
 </script>
 
 <svelte:head>
@@ -24,8 +26,8 @@
     <div class="bg-white -mt-20 -mb-5 z-30 lg:mb-20 shadow-lg p-8 lg:p-16">
         <div class="text-sm lg:text-base mb-10">
             <Breadcrumb
-                firstMenu="Profile"
-                colorFirstMenu="black"
+                firstMenu={headMenu}
+                colorFirstMenu={colorHeadMenu}
                 secondMenu={pageName}
                 colorSecondMenu="redUH-600"
                 thirdMenu=""
