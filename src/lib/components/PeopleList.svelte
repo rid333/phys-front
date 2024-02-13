@@ -37,7 +37,7 @@
         <div class="grid lg:grid-cols-2 p-5 lg:p-10 gap-12 lg:gap-16">
             {#each PeopleItems as {name, position, photo, researchAreas, email, id}}
                 <a href={`/people/${id}`} class="flex gap-x-5">
-                    <img class="aspect-square w-16 h-24 lg:w-28 lg:h-32 rounded-none" src={photo} alt={name}/>
+                    <img class="aspect-square w-20 h-24 lg:w-28 lg:h-32 rounded-none" src={photo} alt={name}/>
                     <div class="flex flex-col">
                         <div class="font-semibold text-xs lg:text-base text-white bg-redUH-600 p-2 mb-2 w-fit">{name}</div>
                         {#if researchAreas !== null && researchAreas !== "tidak-ada"}

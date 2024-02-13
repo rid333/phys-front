@@ -29,7 +29,6 @@
             <div class="block mt-5">
                 <iframe title="Curriculum Structure of BPP" class="w-full aspect-square" src="https://docs.google.com/document/d/e/2PACX-1vSK31x0pJZeZBeOwXMiZpldQVUaHJhDtBJzlTwQn90AXMv0aP3TBk5gvqvKEJh1mg/pub?embedded=true"></iframe>
             </div>
-            <a href="javascript:void(0);">test</a>
         </div>
     </div>
 </div>
