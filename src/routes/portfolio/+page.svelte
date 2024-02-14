@@ -1,9 +1,9 @@
 <script lang="ts">
     import type {PageData} from "./$types";
     export let data: PageData;
-    $: ({ Modules } = data);
+    $: ({ portfolio } = data);
     import Breadcrumb from "$lib/components/ui/Breadcrumb.svelte";
-    const pageName = "Module Handbook";
+    const pageName = "Portfolio";
     import * as Accordion from "$lib/components/ui/accordion";
 </script>
 
@@ -31,12 +31,12 @@
         </div>
         <div class="max-w-full text-black text-base lg:text-xl font-medium lg:leading-relaxed">
             <Accordion.Root>
-                {#each Modules.sort((a, b) => a.semester.localeCompare(b.semester, undefined, {numeric: true})) as modules}
-                    <Accordion.Item value={`item-${modules.id}`}>
-                        <Accordion.Trigger class="font-semibold text-xl lg:text-2xl text-redUH-600">{modules.semester}</Accordion.Trigger>
-                        {#each modules.module as module}
+                {#each portfolio.sort((a, b) => a.semester.localeCompare(b.semester, undefined, {numeric: true})) as portfolios}
+                    <Accordion.Item value={`item-${portfolios.id}`}>
+                        <Accordion.Trigger class="font-semibold text-xl lg:text-2xl text-redUH-600">{portfolios.semester}</Accordion.Trigger>
+                        {#each portfolios.portfolio as portfolio}
                             <Accordion.Content>
-                                <a target="_blank" class="hover:underline text-base" href={module.link}>{module.title}</a>
+                                <a target="_blank" class="hover:underline text-base" href={portfolio.link}>{portfolio.title}</a>
                             </Accordion.Content>
                         {/each}
                     </Accordion.Item>

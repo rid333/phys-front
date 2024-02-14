@@ -64,7 +64,7 @@
             items: [
                 {id: '1', item: 'Module Handbook', href: '/module-handbook'},
                 {id: '2', item: 'Libraries', href: '/library'},
-                // {id: '3', item: 'Portfolio', href: '/portfolio'}
+                {id: '3', item: 'Portfolio', href: '/portfolio'}
             ]
         }
     ]
@@ -111,6 +111,7 @@
                 <a class="font-semibold text-base hover:bg-slate-50 hover:underline transition py-4" href="/people">People</a>
                 <a class="font-semibold text-base hover:bg-slate-50 hover:underline transition py-4" href="/news">News</a>
                 <a class="font-semibold text-base hover:bg-slate-50 hover:underline transition py-4" href="/activities">Events</a>
+                <a class="font-semibold text-base hover:bg-slate-50 hover:underline transition py-4" href="/survey">Survey</a>
                 <a class="font-semibold text-base hover:bg-slate-50 hover:underline transition py-4" href="/academic-sop">Academic SOP</a>
                 <a class="font-semibold text-base hover:bg-slate-50 hover:underline transition py-4" href="/appendix">Appendix</a>
             </div>

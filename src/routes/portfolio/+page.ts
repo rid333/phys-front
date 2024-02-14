@@ -1,10 +1,10 @@
 import type { PageLoad } from "./$types";
 import {PUBLIC_API_URL} from '$env/static/public';''
 
-type ModuleHandbook = {
+type Portfolio = {
     id: string
     semester: string
-    module: {
+    portfolio: {
         id: number
         title: string
         link: string
@@ -12,8 +12,8 @@ type ModuleHandbook = {
 }
 
 export const load: PageLoad = async ( { fetch } ) => {
-    const res = await fetch(`${PUBLIC_API_URL}/api/module-handbook`);
+    const res = await fetch(`${PUBLIC_API_URL}/api/portfolio`);
     const item = await res.json();
-    const Modules: ModuleHandbook[] = item.docs;
-    return { Modules }
+    const portfolio: Portfolio[] = item.docs;
+    return { portfolio }
 }

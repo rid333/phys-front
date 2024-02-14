@@ -39,6 +39,9 @@
             if (child.strikethrough) {
                 child.text = `<s>${child.text}</s>`;
             }
+            if (child.url) {
+                child.text= `<a target="_blank" href="${child.url}">${child.children?.map((child: Child) => child.text)}</a>`
+            }
         });
 
         switch (node.type) {
