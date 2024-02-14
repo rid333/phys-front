@@ -59,11 +59,11 @@
                 <Table.Row>
                   <Table.Cell class="font-semibold">{i + 1}</Table.Cell>
                   <Table.Cell>{item.title}</Table.Cell>
-                  <Table.Cell class="hover:underline"><a target="_blank" href="/">Read</a></Table.Cell>
+                  <Table.Cell class="underline"><a target="_blank" href={item.url}>Read</a></Table.Cell>
                   {#if item.downloadLinkURL !== "" && item.downloadLinkURL !== null}
                     <Table.Cell><p>-</p></Table.Cell>
                   {:else}
-                    <Table.Cell class="hover:underline"><a target="_blank" href={item.downloadLinkURL}>Download</a></Table.Cell>
+                    <Table.Cell class="underline"><a target="_blank" href={item.downloadLinkURL}>Download</a></Table.Cell>
                   {/if}
                 </Table.Row>
               {/each}

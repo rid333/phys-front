@@ -18,30 +18,49 @@
     <div class="flex flex-wrap gap-x-36 gap-y-4">
         <div class="flex flex-col gap-y-1">
             <p class="text-white font-semibold mb-4">Alumni</p>
-            <a target="_blank" href="/">Tracer Study Alumni</a>
-            <a target="_blank" href="/">Survey Pengguna</a>
-            <a target="_blank" href="/">Survey Kepuasan Mahasiswa</a>
-            <a target="_blank" href="/">Kuesioner Pemahaman VMST Prodi</a>
-            <a target="_blank" href="/">Survey Pengguna Alumni S2 Fisika Unhas</a>
+            <a target="_blank" href="https://forms.gle/Shez1mXV3V9cQA6g7">Tracer Study Alumni</a>
+            <a target="_blank" href="https://forms.gle/Qm48tcG7mbb9cvrk6">Survey Pengguna</a>
+            <a target="_blank" href="https://forms.gle/7u3njyzhf1HrrHei9">Survey Kepuasan Mahasiswa</a>
+            <a target="_blank" href="https://forms.gle/6bFtuEu4yAwrJKWt8">Kuesioner Pemahaman VMST Prodi</a>
+            <a target="_blank" href="https://forms.gle/AKSCPLo83tdYt9Lp6">Survey Pengguna Alumni S2 Fisika Unhas</a>
         </div>
         <div class="flex flex-col gap-y-1">
             <p class="text-white font-semibold mb-4">Links</p>
-            <a target="_blank" href="/">LMS Unhas</a>
-            <a target="_blank" href="/">SIM Unhas</a>
-            <a target="_blank" href="/">Login BKD Unhas</a>
-            <a target="_blank" href="/">Login Penelitian Internal</a>
-            <a target="_blank" href="/">FMIPA Unhas</a>
-            <a target="_blank" href="/">Unhas</a>
-            <a target="_blank" href="/">SIMLITABMAS</a>
-            <a target="_blank" href="/">KEMERISTEKDIKTI</a>          
+            <a target="_blank" href="http://lms.unhas.ac.id/">LMS Unhas</a>
+            <a target="_blank" href="http://sim.unhas.ac.id/">SIM Unhas</a>
+            <a target="_blank" href="https://apps.unhas.ac.id/dashboard/index.php/login">Login BKD Unhas</a>
+            <a target="_blank" href="https://app.pdlp2m.unhas.ac.id/login">Login Penelitian Internal</a>
+            <a target="_blank" href="http://www.unhas.ac.id/mipa/">FMIPA Unhas</a>
+            <a target="_blank" href="http://www.unhas.ac.id/">Unhas</a>
+            <a target="_blank" href="http://simlitabmas.ristekdikti.go.id/">SIMLITABMAS</a>
+            <a target="_blank" href="http://www.ristekdikti.go.id/">KEMERISTEKDIKTI</a>          
         </div>
         <div class="flex flex-col gap-y-1">
             <p class="text-white font-semibold mb-4">Journals</p>
-            <a target="_blank" href="/">Unhas E-Journals: Fusi, Jurnal MIPA, Etc.</a>
-            <a target="_blank" href="/">APS Journals: Letter A, B, C, D, E, X</a>
-            <a target="_blank" href="/">IOP Journals, Journal of Physics A</a>
-            <a target="_blank" href="/">Nature Journal: Nature Physics, Science</a>
-            <a target="_blank" href="/">Elsevier Journals</a>
+            <p>Unhas E-Journals: 
+                <a target="_blank" href="http://journal.unhas.ac.id/">Fusi</a>, 
+                <a target="_blank" href="http://journal.unhas.ac.id/index.php/fmipa/">Jurnal MIPA</a>, 
+                Etc.
+            </p>
+            <p>APS Journals: 
+                <a target="_blank" href="http://prl.aps.org/">Letter</a>,
+                <a target="_blank" href="http://pra.aps.org/">A</a>,
+                <a target="_blank" href="http://prb.aps.org/">B</a>, 
+                <a target="_blank" href="http://prc.aps.org/">C</a>, 
+                <a target="_blank" href="http://prd.aps.org/">D</a>, 
+                <a target="_blank" href="http://pre.aps.org/">E</a>, 
+                <a target="_blank" href="http://prx.aps.org/">X</a>
+            </p>
+            <p>
+                <a target="_blank" href="http://www.iop.org/">IOP Journals</a>, 
+                <a target="_blank" href="http://www.iop.org/">Journal of Physics A</a>
+            </p>
+            <p>
+                <a target="_blank" href="http://nature.com/">Nature Journal:</a> 
+                <a target="_blank" href="http://nature.com/nphys/">Nature Physicsa</a>, 
+                <a target="_blank" href="http://www.science.com/">Sciencea</a>,
+            </p>
+            <a target="_blank" href="http://www.elsevier.com/">Elsevier Journals</a>
         </div>
     </div>
     <Separator class='bg-slate-600 mt-5 lg:mt-10'/>
