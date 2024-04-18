@@ -1,18 +1,18 @@
 # Frontend web fisika unhas
 
+### Download
 ```bash
-Download
 git clone https://github.com/rid333/phys-front
 ```
+
+### Install dependecies
 ```bash
-Install dependecies
 npm install
 ```
 
+### Run or build
 ```bash
-Run
 npm run dev
-
-build
+or 
 npm run build
 ```
