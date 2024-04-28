@@ -10,6 +10,7 @@
     imageSource={`${PUBLIC_API_URL}/media/visimisi.jpg`}
     colorHeadMenu="black"
     headMenu="Master Program"
-    pageName="Visi dan Misi Program S2"
+    colorSecondMenu="blueUH-500"
+    pageName="Tujuan dan Manfaat Program"
     pageDescription={visiMisi}
 />

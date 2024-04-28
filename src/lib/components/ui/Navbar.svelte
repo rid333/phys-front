@@ -42,12 +42,7 @@
                             href: "/vision-and-mission",
                         },
                         {
-                            id: "1",
-                            item: "Master Program",
-                            href: "/vision-and-mission-master",
-                        },
-                        {
-                            id: "1",
+                            id: "2",
                             item: "Doctoral Program",
                             href: "/vision-and-mission-doctor",
                         },
@@ -60,6 +55,7 @@
                 },
             ],
         },
+
         {
             id: "2",
             menu: "Study Programs",
@@ -69,16 +65,53 @@
                     item: "Undergraduate Program",
                     href: "/undergraduate-program",
                 },
-                { id: "2", item: "Master Program", href: "/master-program" },
+                // {
+                //     id: "2",
+                //     item: "Master Program",
+                //     href: "/master-program",
+                // },
                 {
-                    id: "3",
+                    id: "2",
                     item: "Doctoral Program",
                     href: "https://doctorphys.sci.unhas.ac.id/",
                 },
             ],
         },
+
         {
             id: "3",
+            menu: "Master Program",
+            items: [
+                {
+                    id: "1",
+                    item: "Profil Lulusan",
+                    href: "/profile-lulusan-s2",
+                },
+                {
+                    id: "2",
+                    item: "Visi dan Misi",
+                    href: "/vision-and-mission-master",
+                },
+                {
+                    id: "3",
+                    item: "Capaian Pembelajaran",
+                    href: "/capaian-pembelajaran-s2",
+                },
+                {
+                    id: "4",
+                    item: "Tujuan dan Manfaat Prodi",
+                    href: "/tujuan-manfaat-s2",
+                },
+                {
+                    id: "5",
+                    item: "Struktur Kurikulum",
+                    href: "/curriculum-structure-master",
+                },
+            ],
+        },
+
+        {
+            id: "4",
             menu: "Research Group",
             items: [
                 {
@@ -104,7 +137,7 @@
             ],
         },
         {
-            id: "4",
+            id: "5",
             menu: "Learning Resources",
             items: [
                 { id: "1", item: "Module Handbook", href: "/module-handbook" },
@@ -212,4 +245,3 @@
         Department of Physics
     </Button>
 </div>
-

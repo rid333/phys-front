@@ -2,9 +2,10 @@
     export let pageName: string;
     export let pageDescription: any[];
     export let imageSource: string;
-    export let imageClass: string = "object-cover"
+    export let imageClass: string = "object-cover";
     export let headMenu: string = "Profile";
     export let colorHeadMenu: string = "redUH-600";
+    export let colorSecondMenu: string = "redUH-600";
     import Serializer from "./Serializer.svelte";
     import Breadcrumb from "./ui/Breadcrumb.svelte";
 </script>
@@ -14,11 +15,19 @@
 </svelte:head>
 
 <div class="relative flex items-center justify-center">
-    <h1 class="text-center text-4xl lg:text-7xl absolute text-white font-bold z-10">{pageName}</h1>
-    {#if imageSource==""}
+    <h1
+        class="text-center text-4xl lg:text-7xl absolute text-white font-bold z-10"
+    >
+        {pageName}
+    </h1>
+    {#if imageSource == ""}
         <div class="w-full h-[500px] object-cover bg-red-700"></div>
     {:else}
-        <img class={`w-full h-[500px] ${imageClass} brightness-50`} src={imageSource} alt={pageName}>
+        <img
+            class={`w-full h-[500px] ${imageClass} brightness-50`}
+            src={imageSource}
+            alt={pageName}
+        />
     {/if}
 </div>
 
@@ -29,13 +38,16 @@
                 firstMenu={headMenu}
                 colorFirstMenu={colorHeadMenu}
                 secondMenu={pageName}
-                colorSecondMenu="redUH-600"
+                {colorSecondMenu}
                 thirdMenu=""
                 colorThirdMenu=""
             />
         </div>
-        <div class="max-w-full text-black text-base lg:text-xl font-medium lg:leading-relaxed prose prose-p:mb-0 prose-li:mb-1 prose-headings:mb-1 prose-headings:mt-5">
+        <div
+            class="max-w-full text-black text-base lg:text-xl font-medium lg:leading-relaxed prose prose-p:mb-0 prose-li:mb-1 prose-headings:mb-1 prose-headings:mt-5"
+        >
             <Serializer richText={pageDescription} />
         </div>
     </div>
 </div>
+

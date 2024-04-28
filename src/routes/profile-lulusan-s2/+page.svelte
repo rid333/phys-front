@@ -7,9 +7,10 @@
 </script>
 
 <Profile
-    imageSource={`${PUBLIC_API_URL}/media/visimisi.jpg`}
+    imageSource={`${PUBLIC_API_URL}/media/mews3.jpg`}
     colorHeadMenu="black"
     headMenu="Master Program"
-    pageName="Visi dan Misi Program S2"
+    colorSecondMenu="blueUH-500"
+    pageName="Profil Lulusan"
     pageDescription={visiMisi}
 />
