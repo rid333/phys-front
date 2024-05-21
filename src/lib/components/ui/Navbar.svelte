@@ -84,27 +84,27 @@
             items: [
                 {
                     id: "1",
-                    item: "Profil Lulusan",
+                    item: "Profil Lulusan S2 Fisika",
                     href: "/profile-lulusan-s2",
                 },
                 {
                     id: "2",
-                    item: "Visi dan Misi",
+                    item: "Visi dan Misi S2 Fisika",
                     href: "/vision-and-mission-master",
                 },
                 {
                     id: "3",
-                    item: "Capaian Pembelajaran",
+                    item: "Capaian Pembelajaran S2 Fisika",
                     href: "/capaian-pembelajaran-s2",
                 },
                 {
                     id: "4",
-                    item: "Tujuan dan Manfaat Prodi",
+                    item: "Tujuan dan Manfaat Prodi S2 Fisika",
                     href: "/tujuan-manfaat-s2",
                 },
                 {
                     id: "5",
-                    item: "Struktur Kurikulum",
+                    item: "Struktur Kurikulum S2 Fisika",
                     href: "/curriculum-structure-master",
                 },
             ],
