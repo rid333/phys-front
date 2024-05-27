@@ -65,50 +65,77 @@
                     item: "Undergraduate Program",
                     href: "/undergraduate-program",
                 },
-                // {
-                //     id: "2",
-                //     item: "Master Program",
-                //     href: "/master-program",
-                // },
                 {
                     id: "2",
+                    item: "Master Program",
+                    children: "true",
+                    items: [
+                        {
+                            id: "1",
+                            item: "Profil Lulusan S2 Fisika",
+                            href: "/profile-lulusan-s2",
+                        },
+                        {
+                            id: "2",
+                            item: "Visi dan Misi S2 Fisika",
+                            href: "/vision-and-mission-master",
+                        },
+                        {
+                            id: "3",
+                            item: "Capaian Pembelajaran S2 Fisika",
+                            href: "/capaian-pembelajaran-s2",
+                        },
+                        {
+                            id: "4",
+                            item: "Tujuan dan Manfaat Prodi S2 Fisika",
+                            href: "/tujuan-manfaat-s2",
+                        },
+                        {
+                            id: "5",
+                            item: "Struktur Kurikulum S2 Fisika",
+                            href: "/curriculum-structure-master",
+                        },
+                    ],
+                },
+                {
+                    id: "3",
                     item: "Doctoral Program",
                     href: "https://doctorphys.sci.unhas.ac.id/",
                 },
             ],
         },
 
-        {
-            id: "3",
-            menu: "Master Program",
-            items: [
-                {
-                    id: "1",
-                    item: "Profil Lulusan S2 Fisika",
-                    href: "/profile-lulusan-s2",
-                },
-                {
-                    id: "2",
-                    item: "Visi dan Misi S2 Fisika",
-                    href: "/vision-and-mission-master",
-                },
-                {
-                    id: "3",
-                    item: "Capaian Pembelajaran S2 Fisika",
-                    href: "/capaian-pembelajaran-s2",
-                },
-                {
-                    id: "4",
-                    item: "Tujuan dan Manfaat Prodi S2 Fisika",
-                    href: "/tujuan-manfaat-s2",
-                },
-                {
-                    id: "5",
-                    item: "Struktur Kurikulum S2 Fisika",
-                    href: "/curriculum-structure-master",
-                },
-            ],
-        },
+        // {
+        //     id: "3",
+        //     menu: "Master Program",
+        //     items: [
+        //         {
+        //             id: "1",
+        //             item: "Profil Lulusan S2 Fisika",
+        //             href: "/profile-lulusan-s2",
+        //         },
+        //         {
+        //             id: "2",
+        //             item: "Visi dan Misi S2 Fisika",
+        //             href: "/vision-and-mission-master",
+        //         },
+        //         {
+        //             id: "3",
+        //             item: "Capaian Pembelajaran S2 Fisika",
+        //             href: "/capaian-pembelajaran-s2",
+        //         },
+        //         {
+        //             id: "4",
+        //             item: "Tujuan dan Manfaat Prodi S2 Fisika",
+        //             href: "/tujuan-manfaat-s2",
+        //         },
+        //         {
+        //             id: "5",
+        //             item: "Struktur Kurikulum S2 Fisika",
+        //             href: "/curriculum-structure-master",
+        //         },
+        //     ],
+        // },
 
         {
             id: "4",
