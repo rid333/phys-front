@@ -1,6 +1,7 @@
 <script lang="ts">
     import Breadcrumb from "$lib/components/ui/Breadcrumb.svelte";
     import daftarStaff from "$lib/images/daftar_staff.png";
+    import daftarStaffNonAkademik from "$lib/images/daftar_staff_nonakademik.jpg";
     import structureStaff from "$lib/images/struktur_organisasi.jpg";
     const pageName = "Department Structure";
 </script>
@@ -40,6 +41,10 @@
             <div class="space-y-4">
                 <h1 class="font-bold text-redUH-600 lg:text-4xl">Staff List</h1>
                 <img src={daftarStaff} alt="Daftar Staff" />
+            </div>
+            <div class="space-y-4">
+                <h1 class="font-bold text-redUH-600 lg:text-4xl">Staff List</h1>
+                <img src={daftarStaff} alt="Daftar Staff Non-akademik" />
             </div>
         </div>
     </div>
