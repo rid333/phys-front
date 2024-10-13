@@ -53,6 +53,11 @@
                     item: "Curriculum Structure",
                     href: "/curriculum-structure",
                 },
+                {
+                    id: "4",
+                    item: "Department Structure",
+                    href: "/structure",
+                },
             ],
         },
 
@@ -214,21 +219,37 @@
                                                     <DropdownMenu.Group>
                                                         {#each item.items as itemChild}
                                                             <DropdownMenu.Item>
-                                                                <a
-                                                                    class="hover:underline"
-                                                                    href={itemChild.href}
-                                                                    >{itemChild.item}</a
+                                                                <Sheet.Close
+                                                                    asChild
+                                                                    let:builder
                                                                 >
+                                                                    <Button
+                                                                        variant="link"
+                                                                        size="icon"
+                                                                        builders={[
+                                                                            builder,
+                                                                        ]}
+                                                                        class="hover:underline"
+                                                                        href={itemChild.href}
+                                                                        >{itemChild.item}</Button
+                                                                    >
+                                                                </Sheet.Close>
                                                             </DropdownMenu.Item>
                                                         {/each}
                                                     </DropdownMenu.Group>
                                                 </DropdownMenu.Content>
                                             </DropdownMenu.Root>
                                         {:else}
-                                            <a
-                                                class="hover:underline text-base font-medium"
-                                                href={item.href}>{item.item}</a
-                                            >
+                                            <Sheet.Close asChild let:builder>
+                                                <Button
+                                                    builders={[builder]}
+                                                    variant="link"
+                                                    size="icon"
+                                                    class="hover:underline text-base font-medium"
+                                                    href={item.href}
+                                                    >{item.item}</Button
+                                                >
+                                            </Sheet.Close>
                                         {/if}
                                     </Accordion.Content>
                                 {/each}
@@ -236,30 +257,74 @@
                         </Accordion.Item>
                     {/each}
                 </Accordion.Root>
-                <a
-                    class="font-semibold text-base hover:bg-slate-50 hover:underline transition py-4"
-                    href="/people">People</a
-                >
-                <a
-                    class="font-semibold text-base hover:bg-slate-50 hover:underline transition py-4"
-                    href="/news">News</a
-                >
-                <a
-                    class="font-semibold text-base hover:bg-slate-50 hover:underline transition py-4"
-                    href="/activities">Events</a
-                >
-                <a
-                    class="font-semibold text-base hover:bg-slate-50 hover:underline transition py-4"
-                    href="/survey">Survey</a
-                >
-                <a
-                    class="font-semibold text-base hover:bg-slate-50 hover:underline transition py-4"
-                    href="/academic-sop">Academic SOP</a
-                >
-                <a
-                    class="font-semibold text-base hover:bg-slate-50 hover:underline transition py-4"
-                    href="/appendix">Appendix</a
-                >
+                <div>
+                    <Sheet.Close asChild let:builder>
+                        <Button
+                            variant="link"
+                            size="icon"
+                            builders={[builder]}
+                            class="font-semibold text-base hover:bg-slate-50 hover:underline transition py-4"
+                            href="/people">People</Button
+                        >
+                    </Sheet.Close>
+                </div>
+                <div>
+                    <Sheet.Close asChild let:builder>
+                        <Button
+                            variant="link"
+                            size="icon"
+                            builders={[builder]}
+                            class="font-semibold text-base hover:bg-slate-50 hover:underline transition py-4"
+                            href="/news">News</Button
+                        >
+                    </Sheet.Close>
+                </div>
+                <div>
+                    <Sheet.Close asChild let:builder>
+                        <Button
+                            variant="link"
+                            size="icon"
+                            builders={[builder]}
+                            class="font-semibold text-base hover:bg-slate-50 hover:underline transition py-4"
+                            href="/activities">Events</Button
+                        >
+                    </Sheet.Close>
+                </div>
+                <div>
+                    <Sheet.Close asChild let:builder>
+                        <Button
+                            variant="link"
+                            size="icon"
+                            builders={[builder]}
+                            class="font-semibold text-base hover:bg-slate-50 hover:underline transition py-4"
+                            href="/survey">Survey</Button
+                        >
+                    </Sheet.Close>
+                </div>
+                <div>
+                    <Sheet.Close asChild let:builder>
+                        <Button
+                            variant="link"
+                            size="icon"
+                            builders={[builder]}
+                            class="font-semibold text-base hover:bg-slate-50 hover:underline transition py-4"
+                            href="/academic-sop"
+                            >Academic SOP
+                        </Button>
+                    </Sheet.Close>
+                </div>
+                <div>
+                    <Sheet.Close asChild let:builder>
+                        <Button
+                            variant="link"
+                            size="icon"
+                            builders={[builder]}
+                            class="font-semibold text-base hover:bg-slate-50 hover:underline transition py-4"
+                            href="/appendix"
+                            >Appendix
+                        </Button>
+                    </Sheet.Close>
+                </div>
             </div>
         </Sheet.Content>
     </Sheet.Root>
