@@ -27,19 +27,19 @@
             id: "1",
             icon: Sarjana,
             jenjang: "Sarjana/Bachelor (S1)",
-            akreditasi: "Unggul",
+            akreditasi: "by ASIIN",
         },
         {
             id: "2",
             icon: Master,
             jenjang: "Magister/Master (S2)",
-            akreditasi: "Unggul",
+            akreditasi: 'With "Unggul"',
         },
         {
             id: "3",
             icon: Doktor,
             jenjang: "Doktor/Doctor (S3)",
-            akreditasi: "Baik",
+            akreditasi: 'With "Baik"',
         },
     ];
 </script>
@@ -137,7 +137,7 @@
                     {item.jenjang}
                 </div>
                 <div class="text-base lg:text-2xl">
-                    Accredited with "{item.akreditasi}"
+                    Accredited "{item.akreditasi}"
                 </div>
             </div>
         {/each}
