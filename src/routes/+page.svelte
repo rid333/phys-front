@@ -3,6 +3,9 @@
     import { Button } from "$lib/components/ui/button";
     import { Separator } from "$lib/components/ui/separator";
     import { Play, ArrowRight, ExternalLink, Clock } from "lucide-svelte";
+    import Sarjana from "$lib/images/s1.png";
+    import Master from "$lib/images/s2.png";
+    import Doktor from "$lib/images/s3.png";
     import * as Dialog from "$lib/components/ui/dialog";
     import type { PageData } from "./$types";
     register();
@@ -18,6 +21,27 @@
     } = data);
     import { PUBLIC_API_URL } from "$env/static/public";
     const pageName = "Department of Physics | Hasanuddin University";
+
+    const accreditations = [
+        {
+            id: "1",
+            icon: Sarjana,
+            jenjang: "Sarjana/Bachelor (S1)",
+            akreditasi: "Unggul",
+        },
+        {
+            id: "2",
+            icon: Master,
+            jenjang: "Magister/Master (S2)",
+            akreditasi: "Unggul",
+        },
+        {
+            id: "3",
+            icon: Doktor,
+            jenjang: "Doktor/Doctor (S3)",
+            akreditasi: "Baik",
+        },
+    ];
 </script>
 
 <svelte:head>
@@ -93,6 +117,25 @@
             </swiper-slide>
         {/each}
     </swiper-container>
+</div>
+
+<!-- Akreditasi -->
+<div
+    class="flex flex-col gap-y-8 justify-center items-center py-20 h-full w-full relative bg-blueUH-500"
+>
+    <div class="text-5xl font-bold text-white uppercase">Accreditations</div>
+    <div class="flex justify-center items-center gap-12 flex-wrap">
+        {#each accreditations as item (item.id)}
+            <div
+                class="flex flex-col justify-center items-center font-medium bg-slate-50 gap-y-4 p-10"
+            >
+                <img src={item.icon} class="w-28 h-auto" alt="Cap" />
+                <hr class="bg-blueUH-500 w-full border-gray-300" />
+                <div class="text-2xl font-semibold">{item.jenjang}</div>
+                <div class="text-2xl">Accredited with "{item.akreditasi}"</div>
+            </div>
+        {/each}
+    </div>
 </div>
 
 <!-- Recent News  -->
