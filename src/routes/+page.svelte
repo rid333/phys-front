@@ -137,7 +137,7 @@
                     {item.jenjang}
                 </div>
                 <div class="text-base lg:text-2xl">
-                    Accredited "{item.akreditasi}"
+                    Accredited {item.akreditasi}
                 </div>
             </div>
         {/each}
