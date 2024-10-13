@@ -163,7 +163,7 @@
                 },
                 {
                     id: "4",
-                    item: "Optics and Spectroscopy",
+                    item: "Optics Spectroscopy and Medical Physics",
                     href: "/optics-and-spectroscopy",
                 },
             ],

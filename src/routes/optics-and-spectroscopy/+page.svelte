@@ -6,5 +6,13 @@
     import { PUBLIC_API_URL } from "$env/static/public";
 </script>
 
-<ResearchGroup {content} {thesis} {dosen} topImage={`${PUBLIC_API_URL}/media/optik.jpg`} pageName="Optics and Spectroscopy" color="yellowUH-900"/>
+<ResearchGroup
+    {content}
+    {thesis}
+    {dosen}
+    topImage={`${PUBLIC_API_URL}/media/optik.jpg`}
+    pageName="Optics Spectroscopy and Medical Physics"
+    color="yellowUH-900"
+/>
 ```
+
