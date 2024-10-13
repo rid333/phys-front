@@ -123,16 +123,22 @@
 <div
     class="flex flex-col gap-y-8 justify-center items-center py-20 h-full w-full relative bg-blueUH-500"
 >
-    <div class="text-5xl font-bold text-white uppercase">Accreditations</div>
+    <div class="text-2xl lg:text-5xl font-bold text-white uppercase">
+        Accreditations
+    </div>
     <div class="flex justify-center items-center gap-12 flex-wrap">
         {#each accreditations as item (item.id)}
             <div
-                class="flex flex-col justify-center items-center font-medium bg-slate-50 gap-y-4 p-10"
+                class="flex flex-col justify-center items-center font-medium bg-slate-50 gap-y-4 w-80 lg:w-fit p-8 lg:p-10"
             >
-                <img src={item.icon} class="w-28 h-auto" alt="Cap" />
+                <img src={item.icon} class="w-20 lg:w-28 h-auto" alt="Cap" />
                 <hr class="bg-blueUH-500 w-full border-gray-300" />
-                <div class="text-2xl font-semibold">{item.jenjang}</div>
-                <div class="text-2xl">Accredited with "{item.akreditasi}"</div>
+                <div class="text-base lg:text-2xl font-semibold">
+                    {item.jenjang}
+                </div>
+                <div class="text-base lg:text-2xl">
+                    Accredited with "{item.akreditasi}"
+                </div>
             </div>
         {/each}
     </div>
