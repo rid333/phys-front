@@ -39,12 +39,19 @@
                 <img src={structureStaff} alt="Structure" />
             </div>
             <div class="space-y-4">
-                <h1 class="font-bold text-redUH-600 lg:text-4xl">Staff List</h1>
+                <h1 class="font-bold text-redUH-600 lg:text-4xl">
+                    Academic Staffs
+                </h1>
                 <img src={daftarStaff} alt="Daftar Staff" />
             </div>
             <div class="space-y-4">
-                <h1 class="font-bold text-redUH-600 lg:text-4xl">Staff List</h1>
-                <img src={daftarStaff} alt="Daftar Staff Non-akademik" />
+                <h1 class="font-bold text-redUH-600 lg:text-4xl">
+                    Non-academic Staffs
+                </h1>
+                <img
+                    src={daftarStaffNonAkademik}
+                    alt="Daftar Staff Non-akademik"
+                />
             </div>
         </div>
     </div>
