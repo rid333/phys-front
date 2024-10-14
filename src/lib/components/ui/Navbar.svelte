@@ -325,6 +325,18 @@
                         </Button>
                     </Sheet.Close>
                 </div>
+                <div>
+                    <Sheet.Close asChild let:builder>
+                        <Button
+                            variant="link"
+                            size="icon"
+                            builders={[builder]}
+                            class="font-semibold text-base hover:bg-slate-50 hover:underline transition py-4"
+                            href="/about"
+                            >About
+                        </Button>
+                    </Sheet.Close>
+                </div>
             </div>
         </Sheet.Content>
     </Sheet.Root>
