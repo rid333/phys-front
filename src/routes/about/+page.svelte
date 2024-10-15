@@ -1,8 +1,12 @@
 <script lang="ts">
     import Breadcrumb from "$lib/components/ui/Breadcrumb.svelte";
-    import image1 from "$lib/images/DEPT FISIKA UNHAS-2_page-0001.jpg";
-    import image2 from "$lib/images/DEPT FISIKA UNHAS-2_page-0002.jpg";
-    import image3 from "$lib/images/DEPT FISIKA UNHAS-2_page-0003.jpg";
+    import * as Tabs from "$lib/components/ui/tabs";
+    import image1 from "$lib/images/id/DEPT FISIKA UNHAS-2_page-0001.jpg";
+    import image2 from "$lib/images/id/DEPT FISIKA UNHAS-2_page-0002.jpg";
+    import image3 from "$lib/images/id/DEPT FISIKA UNHAS-2_page-0003.jpg";
+    import image4 from "$lib/images/en/DEPT FISIKA UNHAS-3_page-0001.jpg";
+    import image5 from "$lib/images/en/DEPT FISIKA UNHAS-3_page-0002.jpg";
+    import image6 from "$lib/images/en/DEPT FISIKA UNHAS-3_page-0003.jpg";
     const pageName = "About";
 </script>
 
@@ -34,9 +38,22 @@
         <div
             class="max-w-full text-black text-base lg:text-2xl font-medium leading-relaxed text-justify space-y-16"
         >
-            <img src={image1} alt="About 1" />
-            <img src={image2} alt="Abbut 2" />
-            <img src={image3} alt="About 3" />
+            <Tabs.Root value="en">
+                <Tabs.List>
+                    <Tabs.Trigger value="en">English</Tabs.Trigger>
+                    <Tabs.Trigger value="id">Indonesia</Tabs.Trigger>
+                </Tabs.List>
+                <Tabs.Content value="en">
+                    <img src={image4} alt="About 4" />
+                    <img src={image5} alt="Abbut 5" />
+                    <img src={image6} alt="About 6" />
+                </Tabs.Content>
+                <Tabs.Content value="id">
+                    <img src={image1} alt="About 1" />
+                    <img src={image2} alt="Abbut 2" />
+                    <img src={image3} alt="About 3" />
+                </Tabs.Content>
+            </Tabs.Root>
         </div>
     </div>
 </div>
