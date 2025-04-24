@@ -7,7 +7,7 @@
     <meta name="title" content={pageName} />
     <meta
         name="description"
-        content="Curriculum Structure of BPP, Department of Physics Hasanuddin University"
+        content="Curriculum Structure, Department of Physics Hasanuddin University"
     />
     <title>{pageName}</title>
 </svelte:head>
@@ -23,7 +23,7 @@
             <Breadcrumb
                 firstMenu="Profile"
                 colorFirstMenu="black"
-                secondMenu={pageName}
+                secondMenu="Curriculum Structure"
                 colorSecondMenu="redUH-600"
                 thirdMenu=""
                 colorThirdMenu=""
