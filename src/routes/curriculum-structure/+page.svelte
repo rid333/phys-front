@@ -13,7 +13,7 @@
 </svelte:head>
 
 <div class="relative flex items-center justify-center">
-    <h1 class="text-center text-4xl lg:text-7xl absolute text-white font-bold z-10">{pageName}</h1>
+    <h1 class="text-center text-4xl lg:text-7xl absolute text-white font-bold z-10">Curriculum Structure</h1>
     <div class="w-full h-[500px] object-cover bg-red-700"></div>
 </div>
 
