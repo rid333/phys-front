@@ -1,9 +1,14 @@
 <script lang="ts">
     import Breadcrumb from "$lib/components/ui/Breadcrumb.svelte";
-    const pageName = "Curriculum Structure";
+    const pageName = "Curriculum Structure | Department of Physics";
 </script>
 
 <svelte:head>
+    <meta name="title" content={pageName} />
+    <meta
+        name="description"
+        content="Curriculum Structure of BPP, Department of Physics Hasanuddin University"
+    />
     <title>{pageName}</title>
 </svelte:head>
 
@@ -25,7 +30,7 @@
             />
         </div>
         <div class="max-w-full text-black text-base lg:text-2xl font-medium leading-relaxed text-justify">
-            <a target="_blank" class="font-semibold text-redUH-600 hover:underline" href="/">Curriculum Structures of BPP</a>
+            <a target="_blank" class="font-semibold text-redUH-600 hover:underline" href="https://docs.google.com/document/d/1PqlbepVSDw_xqmC8LtC_8658O5auSL2O/edit?usp=sharing&ouid=107716363586028152757&rtpof=true&sd=true">Curriculum Structure of BPP</a>
             <div class="block mt-5">
                 <iframe title="Curriculum Structure of BPP" class="w-full aspect-square" src="https://docs.google.com/document/d/1PqlbepVSDw_xqmC8LtC_8658O5auSL2O/preview?usp=embed_googleplus"></iframe>
             </div>
