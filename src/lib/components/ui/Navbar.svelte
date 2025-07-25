@@ -198,7 +198,7 @@
 		<Button variant="ghost" href="/survey" class="font-semibold">Survey</Button>
 		<Button variant="ghost" href="/academic-sop" class="font-semibold">Academic SOP</Button>
 		<Button variant="ghost" href="/appendix" class="font-semibold">Appendix</Button>
-		<Button variant="ghost" href="/about" class="font-semibold">About</Button>
+		<!-- <Button variant="ghost" href="/about" class="font-semibold">About</Button> -->
 	</nav>
 
 	<div class="lg:hidden">
