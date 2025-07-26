@@ -193,11 +193,11 @@
 		{/each}
 
 		<Button variant="ghost" href="/people" class="font-semibold">People</Button>
+		<Button variant="ghost" href="http://trg.unhas.ac.id/mpr" class="font-semibold">TRG Unhas</Button>
 		<Button variant="ghost" href="/news" class="font-semibold">News</Button>
 		<Button variant="ghost" href="/activities" class="font-semibold">Events</Button>
 		<Button variant="ghost" href="/survey" class="font-semibold">Survey</Button>
 		<Button variant="ghost" href="/academic-sop" class="font-semibold">Academic SOP</Button>
-		<Button variant="ghost" href="/appendix" class="font-semibold">Appendix</Button>
 		<!-- <Button variant="ghost" href="/about" class="font-semibold">About</Button> -->
 	</nav>
 
