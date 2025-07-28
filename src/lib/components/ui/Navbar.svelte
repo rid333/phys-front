@@ -140,7 +140,12 @@
                 id: '4',
                 item: 'Optics Spectroscopy and Medical Physics',
                 href: '/optics-and-spectroscopy'
-            }
+            },
+            { 
+                id: '5', 
+                item: 'TRG Unhas',
+                href: 'http://trg.unhas.ac.id/mpr'
+            },
         ]
     },
     {
@@ -161,15 +166,14 @@
         ]
     },
     {
-        id: '8',
+        id: '7',
         menu: 'Activities',
         items: [
             { id: '1', item: 'Events', href: '/activities' },
             { id: '2', item: 'News', href: '/news' },
         ]
     },
-    { id: '10', menu: 'TRG Unhas', href: 'http://trg.unhas.ac.id/mpr' },
-    { id: '11', menu: 'Survey', href: '/survey' },
+    { id: '8', menu: 'Survey', href: '/survey' },
     ];
 
     const dropdownMenus = allMenus.filter((m) => m.items);
