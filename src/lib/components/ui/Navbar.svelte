@@ -173,7 +173,85 @@
             { id: '2', item: 'News', href: '/news' },
         ]
     },
-    { id: '8', menu: 'Survey', href: '/survey' },
+    {
+        id: '2',
+        menu: 'Survey',
+        items: [
+            { 
+                id: '1', 
+                item: 'All Surveys', 
+                href: '/survey' 
+            },
+            {
+                id: '2',
+                item: 'Teaching & Learning Survey',
+                children: 'true',
+                items: [
+                    {
+                        id: '1',
+                        item: 'Survey Form',
+                        href: 'https://cpl.unhas.ac.id/cplunhas/kuisioner/'
+                    },
+                    {
+                        id: '2',
+                        item: 'Survey Result',
+                        href: '/survey/teaching-learning'
+                    },
+                ]
+            },
+            {
+                id: '3',
+                item: 'Workload Student Survey',
+                children: 'true',
+                items: [
+                    {
+                        id: '1',
+                        item: 'Survey Form',
+                        href: 'https://cpl.unhas.ac.id/cplunhas/kuisioner/'
+                    },
+                    {
+                        id: '2',
+                        item: 'Survey Result',
+                        href: '/survey/workload-student'
+                    },
+                ]
+            },
+            {
+                id: '4',
+                item: 'Statisfactory Survey',
+                children: 'true',
+                items: [
+                    {
+                        id: '1',
+                        item: 'Survey Form',
+                        href: 'https://forms.gle/tsN4nVQUKsUR2APB9'
+                    },
+                    {
+                        id: '2',
+                        item: 'Survey Result',
+                        href: '/survey/statisfactory'
+                    },
+                ]
+            },
+            {
+                id: '5',
+                item: 'Exit Survey',
+                children: 'true',
+                items: [
+                    {
+                        id: '1',
+                        item: 'Survey Form',
+                        href: 'https://forms.gle/G4mZtEUkrfFoYzVa8'
+                    },
+                    {
+                        id: '2',
+                        item: 'Survey Result',
+                        href: '/survey/exit-survey'
+                    },
+                ]
+            },
+        ]
+    },
     ];
 
     const dropdownMenus = allMenus.filter((m) => m.items);

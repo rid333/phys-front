@@ -7,4 +7,3 @@
 </script>
 
 <Profile imageSource={`${PUBLIC_API_URL}/media/DeptFisika4.jpg`} colorHeadMenu="black" imageClass="object-cover object-top" pageName="Survey" pageDescription={survey} />
-```

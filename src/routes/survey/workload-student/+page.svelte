@@ -1,0 +1,57 @@
+
+<script lang="ts">
+    import Breadcrumb from "$lib/components/ui/Breadcrumb.svelte";
+    import {PUBLIC_API_URL} from "$env/static/public";
+    const pageName = "Workload Student Survey";
+</script>
+
+<svelte:head>
+    <meta name="title" content={pageName} />
+    <meta
+        name="description"
+        content="Workload Student Survey, Department of Physics Hasanuddin University"
+    />
+    <title>{pageName}</title>
+</svelte:head>
+
+<div class="relative flex items-center justify-center">
+    <h1
+        class="text-center text-4xl lg:text-7xl absolute text-white font-bold z-10"
+    >
+        {pageName}
+    </h1>
+    <img
+        class={`w-full h-[500px] object-cover brightness-50`}
+        src={`${PUBLIC_API_URL}/media/DeptFisika4.jpg`}
+        alt={pageName}
+    />
+</div>
+
+<div class="relative max-w-5xl m-auto">
+    <div class="bg-white -mt-20 -mb-5 z-30 lg:mb-20 shadow-lg p-8 lg:p-16">
+        <div class="mb-10">
+            <Breadcrumb
+                firstMenu="Survey"
+                colorFirstMenu="black"
+                secondMenu={pageName}
+                colorSecondMenu="redUH-600"
+                thirdMenu=""
+                colorThirdMenu=""
+            />
+        </div>
+        <div class="max-w-full text-black text-base lg:text-lg font-medium leading-relaxed text-justify">
+            Odd Semester
+            <img
+                class={`object-cover mb-3`}
+                src="https://18.136.124.23.nip.io/media/Grafik%20Workload%20Survey%20Odd%20Semester%2024-25-1024x707.jpg"
+                alt="Survey"
+            />
+            Even Semester
+            <img
+                class={`object-cover`}
+                src="https://18.136.124.23.nip.io/media/Grafik%20Workload%20Survey%20Even%20Semester%2024-25-1024x709.jpg"
+                alt="Survey"
+            />
+        </div>
+    </div>
+</div>
