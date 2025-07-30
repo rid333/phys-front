@@ -43,13 +43,13 @@
             Odd Semester
             <img
                 class={`object-cover mb-3`}
-                src="https://18.136.124.23.nip.io/media/Grafik%20Workload%20Survey%20Odd%20Semester%2024-25-1024x707.jpg"
+                src="https://18.136.124.23.nip.io/media/Workload_Odd-1024x685.png"
                 alt="Survey"
             />
             Even Semester
             <img
                 class={`object-cover`}
-                src="https://18.136.124.23.nip.io/media/Grafik%20Workload%20Survey%20Even%20Semester%2024-25-1024x709.jpg"
+                src="https://18.136.124.23.nip.io/media/Workload_Even-1024x750.png"
                 alt="Survey"
             />
         </div>
