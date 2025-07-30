@@ -265,10 +265,10 @@
 		<img src={logo} alt="Logo Unhas" class="h-12" />
 		<div class="flex flex-col">
 			<span class="font-semibold text-base leading-tight md:text-lg"
-				>Physics | Hasanuddin University</span
+				><a href="/" class="">Physics</a> | <a href="https://unhas.ac.id" target="_blank">Hasanuddin University</a></span
 			>
-			<span class="font-medium text-xs leading-tight text-slate-600 md:text-base"
-				>Faculty of Mathematics and Natural Sciences</span
+			<a href="https://sci.unhas.ac.id" target="_blank" class="font-medium text-xs leading-tight text-slate-600 md:text-base"
+				>Faculty of Mathematics and Natural Sciences</a
 			>
 		</div>
 	</a>
